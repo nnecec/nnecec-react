@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom';
+import { inject, observer } from 'mobx-react';
 
 import Footer from '../components/footer';
 import Header from '../components/header';
@@ -9,7 +10,14 @@ import About from './about';
 
 import '../styles/app.css';
 
+@inject('commonStore')
+@observer
 class App extends React.Component {
+
+  componentWillMount(){
+
+    this.props.commonStore.setViewHeight(window.innerHeight)
+  }
   public render() {
     return (
       <div>
