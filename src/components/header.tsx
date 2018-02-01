@@ -2,6 +2,8 @@ import * as React from 'react';
 import {
   FormattedMessage,
 } from 'react-intl';
+import { Link } from 'react-router-dom';
+
 import '../styles/header.css';
 
 
@@ -14,32 +16,40 @@ class Header extends React.Component {
   render() {
     return (
       <header className="ec-header">
-        <nav className="ec-header-logo">nnecec</nav>
-        <nav className="ec-header-menu">
-          <ul>
-            <li>
-              <FormattedMessage
-                tagName="span"
-                id="header.nav.home"
-                defaultMessage="Home"
-              />
-            </li>
-            <li>
-              <FormattedMessage
-                tagName="span"
-                id="header.nav.case"
-                defaultMessage="Case"
-              />
-            </li>
-            <li>
-              <FormattedMessage
-                tagName="span"
-                id="header.nav.about"
-                defaultMessage="About"
-              />
-            </li>
-          </ul>
-        </nav>
+        <div className="container">
+          <nav className="ec-header-logo">nnecec</nav>
+          <nav className="ec-header-menu">
+            <ul>
+              <li>
+                <Link to="/">
+                  <FormattedMessage
+                    tagName="span"
+                    id="header.nav.home"
+                    defaultMessage="Home"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link to="/case">
+                  <FormattedMessage
+                    tagName="span"
+                    id="header.nav.case"
+                    defaultMessage="Case"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link to="/about">
+                  <FormattedMessage
+                    tagName="span"
+                    id="header.nav.about"
+                    defaultMessage="About"
+                  />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
     );
   }

@@ -1,1 +1,5 @@
-@import 'normalize.css'
+@import './extension.css';
+@import './common.css';
+
+/* components */
+@import './header.css';

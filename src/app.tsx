@@ -9,13 +9,18 @@ import locale from './locales';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      locale: 'en-US',
+    };
     this.getLocale = this.getLocale.bind(this);
+    this.changeLocale = this.changeLocale.bind(this);
   }
 
   getLocale(lang?: string) {
     let result = {};
+    console.log(lang);
     switch (lang) {
-      case 'zh-CN':
+      case 'zh-Hans':
         result = locale['zh-Hans'];
         break;
       case 'en-US':
@@ -29,10 +34,23 @@ class App extends React.Component {
     return result.default || result;
   }
 
+  changeLocale(): void {
+    const { locale } = this.state;
+
+    if (locale === 'en-US') {
+      this.setState({
+        locale: 'zh-Hans',
+      });
+    } else {
+      this.setState({
+        locale: 'en-US',
+      });
+    }
+  }
+
   public render() {
 
-    // const appLocale = this.getLocale('en-US');
-    const appLocale = this.getLocale('zh-CN');
+    const appLocale = this.getLocale(this.state.locale);
 
     return (
       <IntlProvider locale={appLocale.locale}
