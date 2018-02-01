@@ -2,9 +2,11 @@ import * as React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import { IntlProvider, addLocaleData } from 'react-intl';
+import { Provider } from 'mobx-react';
 
 import Root from './views/root';
 import locale from './locales';
+import stores from './store';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,7 +20,6 @@ class App extends React.Component {
 
   getLocale(lang?: string) {
     let result = {};
-    console.log(lang);
     switch (lang) {
       case 'zh-Hans':
         result = locale['zh-Hans'];
@@ -56,9 +57,12 @@ class App extends React.Component {
       <IntlProvider locale={appLocale.locale}
         messages={appLocale.messages}
         formats={appLocale.formats}>
-        <BrowserRouter>
-          <Root></Root>
-        </BrowserRouter>
+        <Provider {...stores}>
+          <BrowserRouter>
+            <Root></Root>
+          </BrowserRouter>
+        </Provider>
+
       </IntlProvider>
     );
   }

@@ -5,7 +5,7 @@
   "rules": {
     "variable-name": false,
     "function-name": false,
-    "import-name": false
+    "import-name": false,
   },
   "rulesDirectory": []
 }
