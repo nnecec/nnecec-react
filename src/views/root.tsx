@@ -9,7 +9,7 @@ class App extends React.Component {
   public render() {
     return (
       <div>
-        <Header changeLocale={this.props.changeLocale}></Header>
+        <Header></Header>
         <Home></Home>
         <Footer></Footer>
       </div>

@@ -2,7 +2,25 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "moduleResolution": "node",
     "strict": true,
-    "jsx": "react"
+    "sourceMap": true,
+    "declaration": true,
+    "jsx": "react",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      ".git",
+      "node_modules"
+    ]
   }
 }

@@ -1,17 +1,18 @@
-import localeDataEn from 'react-intl/locale-data/en';
-import localeDataZh from 'react-intl/locale-data/zh';
+import * as localeDataEn from 'react-intl/locale-data/en';
+import * as localeDataZh from 'react-intl/locale-data/zh';
 
-import messagesZh from './zh-Hans.messages'
-import messagesEn from './en-US.messages'
+// common messages
+import messagesZh from './zh-Hans.messages';
+import messagesEn from './en-US.messages';
 
 // 引入组件多语言
-// import paginationLocale from '@/components/pagination/locales/en-US';
-
+import componentsEnLocale from '../components/messages/en.messages';
+import componentsZhLocale from '../components/messages/zh.messages';
 
 const locale = {
   'zh-Hans': {
     messages: Object.assign({}, messagesZh, {
-      // Pagination: paginationLocale,
+      ...componentsZhLocale,
     }),
     locale: 'zh-Hans',
     data: localeDataZh,
@@ -33,7 +34,7 @@ const locale = {
   },
   'en-US': {
     messages: Object.assign({}, messagesEn, {
-      // Pagination: paginationLocale,
+      ...componentsEnLocale,
     }),
     locale: 'en-US',
     data: localeDataEn,
@@ -52,7 +53,7 @@ const locale = {
         currency: 'USD',
       },
     },
-  }
+  },
 
 };
 

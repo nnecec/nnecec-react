@@ -14,7 +14,6 @@ class App extends React.Component {
 
   getLocale(lang?: string) {
     let result = {};
-    console.log(lang);
     switch (lang) {
       case 'zh-CN':
         result = locale['zh-Hans'];
@@ -32,16 +31,15 @@ class App extends React.Component {
 
   public render() {
 
-    const appLocale = this.getLocale();
-
-
+    // const appLocale = this.getLocale('en-US');
+    const appLocale = this.getLocale('zh-CN');
 
     return (
       <IntlProvider locale={appLocale.locale}
         messages={appLocale.messages}
         formats={appLocale.formats}>
         <BrowserRouter>
-          <Root changeLocale={this.getLocale}></Root>
+          <Root></Root>
         </BrowserRouter>
       </IntlProvider>
     );
