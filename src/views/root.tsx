@@ -51,7 +51,7 @@ class Root extends React.Component {
       <IntlProvider locale={appLocale.locale}
         messages={appLocale.messages}
         formats={appLocale.formats}>
-        <div>
+        <div className="viewport">
           <Header></Header>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -59,7 +59,7 @@ class Root extends React.Component {
             <Route path="/about" component={About} />
           </Switch>
 
-          {/* <Footer></Footer> */}
+          <Footer></Footer>
         </div>
       </IntlProvider>
 
