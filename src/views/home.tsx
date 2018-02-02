@@ -11,8 +11,14 @@ class Home extends React.Component {
     const { commonStore } = this.props;
     const height = commonStore.viewHeight;
     return (
-      <div>
-        <section className="home-section" style={{ height }}>
+      <div className="home">
+        <section className="home-section logo" style={{ height }}>
+          <p>nnecec</p>
+        </section>
+        <section className="home-section me" style={{ height, marginTop: height }}>
+          <p>nnecec</p>
+        </section>
+        <section className="home-section case" style={{ height }}>
           <p>nnecec</p>
         </section>
       </div>

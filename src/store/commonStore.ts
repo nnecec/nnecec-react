@@ -3,6 +3,7 @@ class CommonStore {
 
   @observable number = 0;
   @observable viewHeight;
+  @observable locale = 'en-US';
 
   @action
   decrease = () => {
@@ -17,6 +18,11 @@ class CommonStore {
   @action
   setViewHeight = (height: number) => {
     this.viewHeight = height;
+  }
+
+  @action
+  setLocale = (lang: string) => {
+    this.locale = lang;
   }
 }
 

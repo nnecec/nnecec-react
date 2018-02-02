@@ -1,0 +1,17 @@
+.home {
+  & .home-section {
+    display: grid;
+  }
+  & .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-index-home-logo);
+    background-color: #fbfbfb;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  & .me {}
+}

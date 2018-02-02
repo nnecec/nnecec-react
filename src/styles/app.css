@@ -1,8 +1,13 @@
 @import './extension.css';
 @import './common.css';
 /* components */
-
-@import './header.css';
+@import './components/header.css';
+@import './components/home.css';
+/*  */
+/* variable */
+@import './variable/color.css';
+@import './variable/z-index.css';
+/*  */
 body {
   font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
