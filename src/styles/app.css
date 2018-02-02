@@ -1,6 +1,7 @@
 @import './extension.css';
 @import './common.css';
 /* components */
+@import './components/browser.css';
 @import './components/header.css';
 @import './components/home.css';
 /*  */
