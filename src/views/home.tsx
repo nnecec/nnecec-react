@@ -1,12 +1,20 @@
 import * as React from 'react';
-import { FormattedDate } from 'react-intl';
+import { inject, observer } from 'mobx-react';
 
+@inject('commonStore')
+@observer
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
+    const { commonStore } = this.props;
+    const height = commonStore.viewHeight;
     return (
       <div>
-        <h2>Home</h2>
-       
+        <section className="home-section" style={{ height }}>
+          <p>nnecec</p>
+        </section>
       </div>
     );
   }

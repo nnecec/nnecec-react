@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 
 import Footer from '../components/footer';
@@ -11,24 +11,28 @@ import About from './about';
 import '../styles/app.css';
 
 @inject('commonStore')
+@withRouter
 @observer
-class App extends React.Component {
+class Root extends React.Component {
 
-  componentWillMount(){
-
-    this.props.commonStore.setViewHeight(window.innerHeight)
+  componentWillMount() {
+    this.props.commonStore.setViewHeight(window.innerHeight);
   }
   public render() {
     return (
       <div>
         <Header></Header>
-        <Route exact path="/" component={Home} />
-        <Route path="/case" component={Case} />
-        <Route path="/about" component={About} />
-        <Footer></Footer>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/case" component={Case} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+
+        {/* <Footer></Footer> */}
       </div>
     );
   }
 }
 
-export default App;
+
+export default Root;

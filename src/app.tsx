@@ -62,7 +62,6 @@ class App extends React.Component {
             <Root></Root>
           </BrowserRouter>
         </Provider>
-
       </IntlProvider>
     );
   }
