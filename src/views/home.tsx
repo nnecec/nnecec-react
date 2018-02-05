@@ -13,13 +13,19 @@ class Home extends React.Component {
     return (
       <div className="home">
         <section className="home-section logo" style={{ height }}>
-          <p>nnecec</p>
+          <div className="container">
+            <p>nnecec</p>
+          </div>
         </section>
         <section className="home-section me" style={{ height, marginTop: height }}>
-          <p>nnecec</p>
+          <div className="container">
+            <p>nnecec</p>
+          </div>
         </section>
         <section className="home-section case" style={{ height }}>
-          <p>nnecec</p>
+          <div className="container">
+            <p>nnecec</p>
+          </div>
         </section>
       </div>
     );

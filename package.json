@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel -p 3004 public/index.html",
-    "build": "parcel build public/index.html -d build"
+    "build": "rm -rf dist && parcel build public/index.html && cp manifest.json dist/ && sw-precache --navigate-fallback='public/index.html' --root='dist/' --static-file-globs='dist/**/!(*map*)'"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +33,7 @@
     "postcss-import": "^11.0.0",
     "postcss-modules": "^1.1.0",
     "prop-types": "^15.6.0",
+    "sw-precache": "^5.2.1",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.5.0",
     "tslint-microsoft-contrib": "^5.0.2",
