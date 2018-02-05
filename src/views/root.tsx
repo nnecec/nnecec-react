@@ -16,8 +16,8 @@ import '../styles/app.css';
 @inject('commonStore')
 @withRouter
 @observer
-class Root extends React.Component {
-  constructor(props) {
+class Root extends React.Component<any, any> {
+  constructor(props: object) {
     super(props);
     this.getLocale = this.getLocale.bind(this);
   }
@@ -27,7 +27,7 @@ class Root extends React.Component {
   }
 
   getLocale(lang?: string) {
-    let result = {};
+    let result: any = {};
     switch (lang) {
       case 'zh-Hans':
         result = locale['zh-Hans'];

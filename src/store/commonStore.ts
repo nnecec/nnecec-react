@@ -1,5 +1,5 @@
 import { observable, action, reaction } from 'mobx';
-class CommonStore {
+export class CommonStore {
 
   @observable viewHeight;
   @observable locale = 'en-US';
