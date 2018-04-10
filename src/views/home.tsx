@@ -19,7 +19,8 @@ class Home extends React.Component {
         </section>
         <section className="home-section me" style={{ height, marginTop: height }}>
           <div className="container">
-            <p>nnecec</p>
+            <p>Have fun, otherwise it's not worth it.</p>
+            <p>快乐至死。</p>
           </div>
         </section>
         <section className="home-section case" style={{ height }}>
