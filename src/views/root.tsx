@@ -51,7 +51,7 @@ class Root extends React.Component<any, any> {
       <IntlProvider locale={appLocale.locale}
         messages={appLocale.messages}
         formats={appLocale.formats}>
-        <div className="viewport">
+        <div className="viewport font-song">
           <Header></Header>
           <Switch>
             <Route exact path="/" component={Home} />
