@@ -5,8 +5,8 @@ import { IntlProvider, addLocaleData } from 'react-intl';
 
 import locale from '../locales';
 
-import Footer from '../components/footer';
-import Header from '../components/header';
+import Footer from './shared/footer';
+import Header from './shared/header';
 import Home from './home';
 import Case from './case';
 import About from './about';
@@ -51,7 +51,7 @@ class Root extends React.Component<any, any> {
       <IntlProvider locale={appLocale.locale}
         messages={appLocale.messages}
         formats={appLocale.formats}>
-        <div className="viewport font-song">
+        <div className="viewport font-hei">
           <Header></Header>
           <Switch>
             <Route exact path="/" component={Home} />

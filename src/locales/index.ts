@@ -6,16 +6,12 @@ import messagesZh from './zh-Hans.messages';
 import messagesEn from './en-US.messages';
 
 // 引入组件多语言
-import componentsEnLocale from '../components/messages/en.messages';
-import componentsZhLocale from '../components/messages/zh.messages';
-
 import viewsEnLocale from '../views/messages/en.messages';
 import viewsZhLocale from '../views/messages/zh.messages';
 
 const locale = {
   'zh-Hans': {
     messages: Object.assign({}, messagesZh, {
-      ...componentsZhLocale,
       ...viewsZhLocale,
     }),
     locale: 'zh-Hans',
@@ -38,7 +34,6 @@ const locale = {
   },
   'en-US': {
     messages: Object.assign({}, messagesEn, {
-      ...componentsEnLocale,
       ...viewsEnLocale,
     }),
     locale: 'en-US',

@@ -10,6 +10,7 @@
       "es2017",
       "dom"
     ],
+    "sourceMap": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
