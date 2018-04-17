@@ -24,10 +24,12 @@
     justify-items: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
     & .me-wrapper {
       height: inherit;
       width: 100%;
       & .img {
+        background-color: #fff;
         background-image: url('http://oe2c4fczn.bkt.clouddn.com/unsplash-pineapple-supply-co-262624.png');
         background-position: center bottom;
         background-repeat: no-repeat;
