@@ -1,8 +1,15 @@
 import { observable, action, reaction } from 'mobx';
+import AdvancedStorage from '../utils/advancedStorage';
 export class CommonStore {
+  storage: AdvancedStorage;
 
-  @observable viewHeight;
-  @observable locale = 'en-US';
+  @observable viewHeight: any;
+  @observable locale: string;
+
+  constructor() {
+    this.storage = new AdvancedStorage('lang');
+    this.locale = this.storage.getLocal() || navigator.language || 'en-US';
+  }
 
   @action
   setViewHeight = (height: number) => {

@@ -38,6 +38,9 @@
       }
       & .description {
         height: 20%;
+        display: grid;
+        justify-content: center;
+        
       }
     }
   }

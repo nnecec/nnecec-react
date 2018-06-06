@@ -10,7 +10,7 @@ import viewsEnLocale from '../views/messages/en.messages';
 import viewsZhLocale from '../views/messages/zh.messages';
 
 const locale = {
-  'zh-Hans': {
+  'zh-cn': {
     messages: Object.assign({}, messagesZh, {
       ...viewsZhLocale,
     }),
@@ -32,7 +32,7 @@ const locale = {
       },
     },
   },
-  'en-US': {
+  'en-us': {
     messages: Object.assign({}, messagesEn, {
       ...viewsEnLocale,
     }),

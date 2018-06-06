@@ -12,7 +12,6 @@ class Me extends React.Component {
     };
   }
 
-
   handleEnter = () => {
     const { isTransition } = this.state;
 
@@ -38,12 +37,12 @@ class Me extends React.Component {
     return (
       <div className="me-wrapper">
         <figure className="img" ref={this.img}></figure>
-        <Waypoint onEnter={this.handleEnter} ref={this.desc}>
+        {/* <Waypoint onEnter={this.handleEnter} ref={this.desc}>
           <div className="description">
             <p>我虽懒是懒一点</p>
             <p>但绝对不是随便</p>
           </div>
-        </Waypoint>
+        </Waypoint> */}
 
       </div>
     );

@@ -9,7 +9,7 @@ import Footer from './shared/footer';
 import Header from './shared/header';
 import Home from './home';
 import Case from './case';
-import About from './about';
+import Resume from './about/resume';
 
 import '../styles/app.css';
 
@@ -19,25 +19,17 @@ import '../styles/app.css';
 class Root extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
-    this.getLocale = this.getLocale.bind(this);
+
   }
 
   componentWillMount() {
     this.props.commonStore.setViewHeight(window.innerHeight);
+
   }
 
-  getLocale(lang?: string) {
-    let result: any = {};
-    switch (lang) {
-      case 'zh-Hans':
-        result = locale['zh-Hans'];
-        break;
-      case 'en-US':
-        result = locale['en-US'];
-        break;
-      default:
-        result = locale['en-US'];
-    }
+  getLocale = (lang: string = 'zh-CN') => {
+    const result: any = locale[lang.toLowerCase()];
+
     addLocaleData(result.data);
 
     return result.default || result;
@@ -56,7 +48,7 @@ class Root extends React.Component<any, any> {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/case" component={Case} />
-            <Route path="/about" component={About} />
+            <Route path="/about" component={Resume} />
           </Switch>
 
           <Footer></Footer>
@@ -66,6 +58,5 @@ class Root extends React.Component<any, any> {
     );
   }
 }
-
 
 export default Root;

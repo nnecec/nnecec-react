@@ -1,3 +1,3 @@
 export default {
-  'footer.designed': 'nnecec 作品.',  
+  'footer.designed': '由 nnecec 设计。',
 };
