@@ -8,7 +8,7 @@ import locale from '../locales';
 import Footer from './shared/footer';
 import Header from './shared/header';
 import Home from './home';
-import Case from './case';
+import Case from './case/case';
 import Resume from './about/resume';
 
 import '../styles/app.css';

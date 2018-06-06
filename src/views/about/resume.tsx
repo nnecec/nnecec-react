@@ -75,7 +75,7 @@ class Resume extends React.Component {
 
             <FormattedMessage
               tagName="span"
-              id="resume.work.malianghang"
+              id="resume.project.malianghang"
             />
           </div>
         </section>
