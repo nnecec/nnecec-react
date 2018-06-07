@@ -1,5 +1,12 @@
 @import './extension.css';
 @import './common.css';
+
+/* variable */
+
+@import './variable/color.css';
+@import './variable/z-index.css';
+
+
 /* components */
 
 @import './components/browser.css';
@@ -10,10 +17,7 @@
 @import './components/resume.css';
 @import './components/case.css';
 
-/* variable */
 
-@import './variable/color.css';
-@import './variable/z-index.css';
 /*  */
 
 body {
