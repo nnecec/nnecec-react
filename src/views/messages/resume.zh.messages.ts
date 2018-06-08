@@ -8,10 +8,9 @@ export default {
   'resume.work.dianwoda': '致力于末端即时物流服务，以众包共享模式，为用户提供快速、准时、可信赖的物品送达服务的“众包模式的即时物流平台”',
 
   'resume.project': '项目经验',
-  'resume.project.malianghang': '馬良行官方网站',
-  'resume.project.malianghangAdmin': '馬良行后台管理',
+  'resume.project.malianghang': '馬良行官方网站及后台管理系统',
   'resume.project.dianwoda': '点我达官网',
-  'resume.project.dianwodaAdmin': '点我达中后台系统',
+  'resume.project.dianwodaAdmin': '点我达中后台管理系统',
   'resume.project.luoo': '落网electron',
   'resume.project.ecblog': '基于GraphQL的node服务端',
   'resume.project.necook': '笔记',

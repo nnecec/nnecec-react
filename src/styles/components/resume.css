@@ -1,18 +1,29 @@
 .resume {
   color: var(--black-color);
+  background-color: #f6f6f6;
 
-  & .basic-info {
+  & .center {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  & .title {
+    font-size: 20px;
+    color: var(--black-color);
+  }
+
+  & .basic-info {
+    flex-direction: column;
+    background-size: cover;
 
     & .name, & .contact {
-      width: 200px;
+      width: 600px;
     }
 
     & .name {
-      margin-bottom: 10px;      
+      margin-bottom: 10px;
+      font-size: 20px;
     }
 
     & .contact {
@@ -26,10 +37,27 @@
   }
 
   & .work {
+    flex-direction: column;
 
-    padding: 100px;
+    & .title, & .item {
+      width: 600px;
+      margin-bottom: 10px;
+    }
 
-    & span {
+    & .item span {
+      color: var(--grey-color);
+    }
+  }
+
+  & .project {
+    flex-direction: column;
+
+    & .title, & .item {
+      width: 600px;
+      margin-bottom: 10px;
+    }
+
+    & .item span {
       color: var(--grey-color);
     }
   }
