@@ -13,7 +13,7 @@ import Resume from './about/resume';
 
 import '../styles/app.css';
 
-@inject('commonStore')
+@inject('routing', 'commonStore')
 @withRouter
 @observer
 class Root extends React.Component<any, any> {
@@ -23,7 +23,9 @@ class Root extends React.Component<any, any> {
   }
 
   componentWillMount() {
-    this.props.commonStore.setViewHeight(window.innerHeight);
+    const { commonStore, history } = this.props;
+    commonStore.setViewHeight(window.innerHeight);
+    history.listen(() => window.scrollTo(0, 0));
 
   }
 
