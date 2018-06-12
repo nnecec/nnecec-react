@@ -29,7 +29,7 @@ class Header extends React.Component {
         <div className="header-background"></div>
         <div className="container">
           <nav className="ec-header-logo">
-            <Link to="/">nnecec</Link>
+            <Link to="/" className="no">nnecec</Link>
           </nav>
           <nav className="ec-header-menu">
             <ul>

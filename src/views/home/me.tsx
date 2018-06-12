@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Waypoint from 'react-waypoint';
 
 class Me extends React.Component {
@@ -19,13 +20,23 @@ class Me extends React.Component {
   render() {
     return (
       <div className="me-wrapper">
-        {/* <Waypoint onEnter={this.handleEnter} ref={this.desc}>
-          <div className="description">
-            <p>我虽懒是懒一点</p>
-            <p>但绝对不是随便</p>
+        <div className="intro">
+          <div>Hello!</div>
+          <div>I'm Shi Cheng, a front-end software engineer.</div>
+          <div>Get in touch:
+            <a href="mailto:nnecec@outlook.com">nnecec@outlook.com</a>
           </div>
-        </Waypoint> */}
+          <div>View my resume:
+            <Link to="/about">Resume</Link>
+          </div>
+        </div>
 
+        <div className="description">
+          <div>我在2015年毕业后一直从事前端开发工作，我享受这份职业并努力创造出美丽美好的产品。我的目标是成为行业中优秀的工程师。</div>
+          <div>
+            工作之外，我可能在看剧，看电影，做菜，逛街，玩英雄联盟，看书等等，和我爱的人。
+          </div>
+        </div>
       </div>
     );
   }

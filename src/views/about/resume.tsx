@@ -141,6 +141,14 @@ class Resume extends React.Component {
                   </Trail>
                   <Waypoint onEnter={this.handleProjectsIn} />
 
+                  <div>
+                    malianghang official website
+                    一个珠宝首饰定制的电商网站。我参与了它从无到有的开发过程，这是我的第一份工作，也是第一个项目，它不完美，却有带给我许多不曾有过的经历。
+                  </div>
+
+                  <div>
+
+                  </div>
                 </div>
 
               </div>

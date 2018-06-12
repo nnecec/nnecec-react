@@ -1,6 +1,7 @@
 body {
-  --theme-color: rgb(240, 68, 68);
+  --theme-color: #4da3ff;
   --grey-color: #6F6F6F;
   --black-color: #363636;
-  --white-color: #CACBD5;
+  --white-color: rgb(240, 240, 240);
+  --pink-color: rgb(255, 196, 209);
 }
