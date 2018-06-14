@@ -1,3 +1,13 @@
 .case {
   padding-top: 52px;
 }
+
+.repositories {
+  & .repository {
+    list-style: none;
+
+    & h3 {
+      font-size: 16px;
+    }
+  }
+}

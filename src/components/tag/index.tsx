@@ -1,0 +1,58 @@
+import * as React from 'react';
+import styled from 'styled-components';
+import * as PropTypes from 'prop-types';
+
+const StyledTag = styled.div`
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid #fefefe;
+`;
+
+const spanColor = {
+  JavaScript: '#EFDE6D',
+  TypeScript: '#327487',
+  React: '#6BDBF7',
+  MobX: '#E36432',
+  Parcel: '#BA444D',
+  PostCSS: '#D93D27',
+  GraphQL: '#DC2396',
+  Koa: '#33333D',
+  mongoose: '#840610',
+  Passport: '#49DB80',
+  Angular: '#D9143C',
+  Apollo: '#241B7D',
+  RxJS: '#CD208D',
+};
+
+const StyledSpan = styled.span`
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  background-color: ${props => spanColor[props.title]};
+  border-radius: 50%;
+  margin-right: 4px;
+`;
+
+class Tag extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { title } = this.props;
+    return (
+      <StyledTag>
+        <StyledSpan title={title}></StyledSpan>
+        {title}
+      </StyledTag>
+    );
+  }
+}
+
+Tag.propTypes = {
+  title: PropTypes.oneOf(['JavaScript', 'TypeScript', 'React']),
+};
+
+export default Tag;

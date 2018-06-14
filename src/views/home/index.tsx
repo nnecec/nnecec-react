@@ -3,14 +3,12 @@ import { inject, observer } from 'mobx-react';
 import NNecec from './nnecec';
 import Me from './me';
 
-
 @inject('commonStore')
 @observer
 class Home extends React.Component {
   constructor(props) {
     super(props);
   }
-
 
   render() {
     const { commonStore } = this.props;
@@ -19,10 +17,12 @@ class Home extends React.Component {
       <div className="home">
         <section className="home-section logo" style={{ height }}>
         </section>
-        <section className="home-section me" style={{ height }}>
-          <Me></Me>
+        <section className="home-section me">
+          <div className="container">
+            <Me></Me>
+          </div>
         </section>
-        <section className="home-section case" style={{ height }}>
+        <section className="home-section case">
           <div className="container">
             <p>nnecec</p>
           </div>
@@ -31,7 +31,5 @@ class Home extends React.Component {
     );
   }
 }
-
-
 
 export default Home;

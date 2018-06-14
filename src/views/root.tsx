@@ -26,7 +26,7 @@ class Root extends React.Component<any, any> {
     const { commonStore, history } = this.props;
     commonStore.setViewHeight(window.innerHeight);
     history.listen(() => window.scrollTo(0, 0));
-
+    // document.body.addEventListener('touchstart', function () { }, true);
   }
 
   getLocale = (lang: string = 'zh-CN') => {

@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
-import {
-  FormattedMessage,
-} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import { Parallax, ParallaxLayer, Trail, config } from 'react-spring';
 import Waypoint from 'react-waypoint';
 

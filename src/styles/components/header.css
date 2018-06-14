@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   height: 52px;
+
   & .header-background {
     backdrop-filter: saturate(180%) blur(20px);
     transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
@@ -15,25 +16,30 @@
     right: 0;
     bottom: 0;
   }
+
   & .container {
     position: relative;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
     z-index: 1;
     height: 100%;
     align-items: center;
   }
+
   & .ec-header-logo {}
+
   & .ec-header-menu {
     & ul {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
       list-style: none;
       color: #333;
       font-size: 12px;
+
       & li {
-        line-height: 20px;
-        & button{
+        line-height: 16px;
+        margin-right: 12px;
+
+        & button {
           background-color: transparent;
         }
       }
