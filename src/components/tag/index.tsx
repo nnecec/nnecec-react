@@ -23,6 +23,7 @@ const spanColor = {
   Angular: '#D9143C',
   Apollo: '#241B7D',
   RxJS: '#CD208D',
+  Webpack: '#E3F1FB',
 };
 
 const StyledSpan = styled.span`

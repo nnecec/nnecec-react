@@ -51,6 +51,17 @@ class Repositories extends React.Component {
                 <Tag title={'RxJS'} />
               </div>
             </li>
+            <li className="repository">
+              <h3>dianwoda admin system</h3>
+              <p>后台运营系统。前端项目使用 React + Redux + AntD 搭建，后端采用 dubbo 微服务架构，通过 Node.js 网关层提供接口</p>
+              <div className="tag">
+                <Tag title={'TypeScript'} />
+                <Tag title={'Angular'} />
+                <Tag title={'Apollo'} />
+                <Tag title={'RxJS'} />
+                <Tag title={'Webpack'} />
+              </div>
+            </li>
           </ul>
         </div>
       </div>
