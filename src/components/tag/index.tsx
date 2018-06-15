@@ -25,6 +25,9 @@ const spanColor = {
   RxJS: '#CD208D',
   Webpack: '#5EA9D9',
   Redux: '#7651B5',
+  Grunt: '#E08545',
+  RequireJS: '#398AD6',
+  SCSS: '#CB6899',
 };
 
 const StyledSpan = styled.span`
@@ -68,7 +71,12 @@ Tag.propTypes = {
     'Angular',
     'Apollo',
     'RxJS',
-    'Webpack']),
+    'Webpack',
+    'Redux',
+    'Grunt',
+    'RequireJS',
+    'SCSS',
+  ]),
 };
 
 export default Tag;

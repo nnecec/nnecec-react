@@ -21,7 +21,10 @@ class Case extends React.Component {
     return (
       <div className="case">
 
-        <div style={{ height: `${this.props.commonStore.viewHeight}px` }}></div>
+        <div style={{
+          height: `${this.props.commonStore.viewHeight}px`,
+          backgroundColor: '#ddd',
+        }}></div>
         <Repositories />
       </div>
     );
