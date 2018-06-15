@@ -2,6 +2,8 @@
   "modules": false,
   "plugins": {
     "postcss-cssnext":{},
-    "cssnano":{}
+    "cssnano":{},
+    "postcss-color-function":{},
+    "postcss-custom-properties":{}
   }
 }

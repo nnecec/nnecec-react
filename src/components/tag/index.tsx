@@ -23,13 +23,14 @@ const spanColor = {
   Angular: '#D9143C',
   Apollo: '#241B7D',
   RxJS: '#CD208D',
-  Webpack: '#E3F1FB',
+  Webpack: '#5EA9D9',
+  Redux: '#7651B5',
 };
 
 const StyledSpan = styled.span`
   display: inline-block;
-  height: 9px;
-  width: 9px;
+  height: 10px;
+  width: 10px;
   background-color: ${props => spanColor[props.title]};
   border-radius: 50%;
   margin-right: 4px;
@@ -53,7 +54,21 @@ class Tag extends React.Component {
 }
 
 Tag.propTypes = {
-  title: PropTypes.oneOf(['JavaScript', 'TypeScript', 'React']),
+  title: PropTypes.oneOf([
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'MobX',
+    'Parcel',
+    'PostCSS',
+    'GraphQL',
+    'Koa',
+    'mongoose',
+    'Passport',
+    'Angular',
+    'Apollo',
+    'RxJS',
+    'Webpack']),
 };
 
 export default Tag;

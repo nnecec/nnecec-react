@@ -20,7 +20,9 @@ class Repositories extends React.Component {
         <div className="container">
           <ul>
             <li className="repository">
-              <h3>nnecec-react</h3>
+              <h3>
+                <a href="https://github.com/nnecec/nnecec-react" target="_blank">nnecec-react</a>
+              </h3>
               <p>personal website</p>
               <div className="tag">
                 <Tag title={'TypeScript'} />
@@ -55,10 +57,9 @@ class Repositories extends React.Component {
               <h3>dianwoda admin system</h3>
               <p>后台运营系统。前端项目使用 React + Redux + AntD 搭建，后端采用 dubbo 微服务架构，通过 Node.js 网关层提供接口</p>
               <div className="tag">
-                <Tag title={'TypeScript'} />
-                <Tag title={'Angular'} />
-                <Tag title={'Apollo'} />
-                <Tag title={'RxJS'} />
+                <Tag title={'JavaScript'} />
+                <Tag title={'React'} />
+                <Tag title={'Redux'} />
                 <Tag title={'Webpack'} />
               </div>
             </li>

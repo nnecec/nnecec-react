@@ -39,15 +39,15 @@ class Resume extends React.Component {
 
         <Parallax pages={3}>
           <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#fefefe' }}></ParallaxLayer >
-          <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#f0f0f0' }}></ParallaxLayer >
-          <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#f3f3f3' }}></ParallaxLayer >
+          <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#fcfcfc' }}></ParallaxLayer >
+          <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#fbfbfb' }}></ParallaxLayer >
 
           <ParallaxLayer offset={0} speed={0}>
             <section
               className="basic-info center"
               style={{ height: `${this.viewHeight}px` }}
             >
-              <div>
+              <div className="container">
                 <div className="avatar"></div>
 
                 <div className="name">
@@ -85,7 +85,7 @@ class Resume extends React.Component {
 
           <ParallaxLayer offset={1} speed={0}>
             <section className="work center" style={{ height: `${this.viewHeight}px` }}>
-              <div>
+              <div className="container">
                 <div className="title">
                   <FormattedMessage
                     tagName="span"
@@ -113,7 +113,7 @@ class Resume extends React.Component {
 
           <ParallaxLayer offset={2} speed={-0}>
             <section className="project center" style={{ height: `${this.viewHeight}px` }}>
-              <div>
+              <div className="container">
                 <div className="title">
                   <FormattedMessage
                     tagName="span"

@@ -17,6 +17,7 @@
     & h3 {
       font-size: 16px;
       margin: 0 0 4px 0;
+      color: var(--theme-color)
     }
 
     & .tag > div {
