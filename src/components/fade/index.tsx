@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import * as propTypes from 'prop-types';
 import Waypoint from 'react-waypoint';
 import { Spring, interpolate } from 'react-spring';
-
+import { TimingAnimation } from 'react-spring/dist/addons';
 class Fade extends React.Component {
 
   constructor(props) {
@@ -29,6 +29,8 @@ class Fade extends React.Component {
       <Spring
         from={{ opacity: 0, y: 20 }}
         to={{ opacity, y }}
+        impl={TimingAnimation}
+        config={{ duration: 400 }}
       >
         {({ opacity, y }) =>
           <div style={{

@@ -28,6 +28,7 @@ const spanColor = {
   Grunt: '#E08545',
   RequireJS: '#398AD6',
   SCSS: '#CB6899',
+  'Node.js': '#026D00',
 };
 
 const StyledSpan = styled.span`
@@ -76,6 +77,7 @@ Tag.propTypes = {
     'Grunt',
     'RequireJS',
     'SCSS',
+    'Node.js',
   ]),
 };
 

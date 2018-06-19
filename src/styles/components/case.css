@@ -3,21 +3,33 @@
 }
 
 .repositories {
+  & .container {
+    margin-bottom: 120px;
+
+    & .title {
+      text-align: right;
+      padding: 8px 50px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      & .title {
+        text-align: left;
+        padding-right: 0;
+      }
+    }
+  }
+
   & .repository {
     list-style: none;
     border: 1px solid #eaecef;
     padding: 16px;
     border-radius: 3px;
-    margin: 8px 0;
-
-    /* trigger BFC */
-    width: 100%;
-    display: inline-block;
+    margin-bottom: 16px;
 
     & h3 {
       font-size: 16px;
       margin: 0 0 4px 0;
-      color: var(--theme-color)
+      color: var(--theme-color);
     }
 
     & .tag > div {

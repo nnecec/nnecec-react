@@ -5,10 +5,13 @@ import FooterEnMessages from './footer.en.messages';
 
 import ResumeEnMessages from './resume.en.messages';
 
+import CaseEnMessages from './case.en.messages';
+
 export default {
   ...HomeEnMessages,
   ...AboutEnMessages,
   ...HeaderEnMessages,
   ...FooterEnMessages,
   ...ResumeEnMessages,
+  ...CaseEnMessages,
 };
