@@ -37,7 +37,7 @@ class Fade extends React.Component {
             opacity,
             transform: `translate(0px, ${y}px)`,
           }}>
-            <Waypoint onEnter={this.handleSpringEnter} bottomOffset={300}></Waypoint>
+            <Waypoint onEnter={this.handleSpringEnter} bottomOffset={360}></Waypoint>
             {children}
           </div>
         }

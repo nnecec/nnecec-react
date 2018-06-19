@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { Tag, Fade } from '../../components';
@@ -18,7 +18,6 @@ class Repositories extends React.Component {
     return (
       <div className="repositories">
         <Fade>
-
           <div className="container work">
             <Grid>
               <Row>
@@ -30,10 +29,10 @@ class Repositories extends React.Component {
                 </Col>
 
                 <Col sm={12} md={8}>
-                  <ul>
-                    <li className="repository">
-                      <h3>dianwoda admin system</h3>
-                      <FormattedMessage
+                  <ul className="read">
+                    <li className="repository ">
+                      <h3>admin.dianwoda</h3>
+                      <FormattedHTMLMessage
                         tagName="p"
                         id="repository.dianwoda.desc"
                       />
@@ -47,7 +46,7 @@ class Repositories extends React.Component {
                     </li>
                     <li className="repository">
                       <h3>malianghang.com</h3>
-                      <FormattedMessage
+                      <FormattedHTMLMessage
                         tagName="p"
                         id="repository.malianghang.desc"
                       />
@@ -79,7 +78,7 @@ class Repositories extends React.Component {
                 </Col>
 
                 <Col sm={12} md={8}>
-                  <ul>
+                  <ul className="read">
                     <li className="repository">
                       <h3>
                         <a href="https://github.com/nnecec/nnecec-react" target="_blank">nnecec-react</a>

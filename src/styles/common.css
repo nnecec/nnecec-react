@@ -8,3 +8,9 @@ figure {
   margin: 0;
   width: 100%;
 }
+
+.read{
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--black-color);
+}
