@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "alias": {
-    "components": "./src/components/"
+    "components": "./src/components/",
   },
   "dependencies": {
     "components": "^0.1.0",

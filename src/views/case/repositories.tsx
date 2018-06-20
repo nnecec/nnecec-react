@@ -78,60 +78,55 @@ class Repositories extends React.Component {
                 </Col>
 
                 <Col sm={12} md={8}>
-                  <ul className="read">
-                    <li className="repository">
-                      <h3>
-                        <a href="https://github.com/nnecec/nnecec-react" target="_blank">nnecec-react</a>
-                      </h3>
-                      <FormattedHTMLMessage
-                        tagName="p"
-                        id="repository.nnecec-react.desc"
-                      />
-                      <div className="tag">
-                        <Tag title={'TypeScript'} />
-                        <Tag title={'React'} />
-                        <Tag title={'MobX'} />
-                        <Tag title={'Parcel'} />
-                        <Tag title={'PostCSS'} />
-                      </div>
-                    </li>
-                    <li className="repository">
-                      <h3>ecblog-server</h3>
-                      <FormattedHTMLMessage
-                        tagName="p"
-                        id="repository.ecblog-server.desc"
-                      />
-                      <div className="tag">
-                        <Tag title={'Node.js'} />
-                        <Tag title={'TypeScript'} />
-                        <Tag title={'GraphQL'} />
-                        <Tag title={'Koa'} />
-                        <Tag title={'mongoose'} />
-                        <Tag title={'Passport'} />
-                      </div>
-                    </li>
-                    <li className="repository">
-                      <h3>ecblog-admin</h3>
-                      <FormattedHTMLMessage
-                        tagName="p"
-                        id="repository.ecblog-admin.desc"
-                      />
-                      <div className="tag">
-                        <Tag title={'TypeScript'} />
-                        <Tag title={'Angular'} />
-                        <Tag title={'Apollo'} />
-                        <Tag title={'RxJS'} />
-                        <Tag title={'SCSS'} />
-                      </div>
-                    </li>
-                  </ul>
+                  <a className="repository no read" href="https://github.com/nnecec/nnecec-react" target="_blank">
+                    <h3>nnecec-react</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.nnecec-react.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'TypeScript'} />
+                      <Tag title={'React'} />
+                      <Tag title={'MobX'} />
+                      <Tag title={'Parcel'} />
+                      <Tag title={'PostCSS'} />
+                    </div>
+                  </a>
+                  <a className="repository no read" href="https://github.com/nnecec/ecblog-server" target="_blank">
+                    <h3>ecblog-server</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.ecblog-server.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'Node.js'} />
+                      <Tag title={'TypeScript'} />
+                      <Tag title={'GraphQL'} />
+                      <Tag title={'Koa'} />
+                      <Tag title={'mongoose'} />
+                      <Tag title={'Passport'} />
+                    </div>
+                  </a>
+                  <a className="repository no read" href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
+                    <h3>ecblog-admin</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.ecblog-admin.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'TypeScript'} />
+                      <Tag title={'Angular'} />
+                      <Tag title={'Apollo'} />
+                      <Tag title={'RxJS'} />
+                      <Tag title={'SCSS'} />
+                    </div>
+                  </a>
                 </Col>
               </Row>
             </Grid>
           </Fade>
         </div>
       </div>
-
     );
   }
 }

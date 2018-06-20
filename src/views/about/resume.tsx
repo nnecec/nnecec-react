@@ -63,7 +63,7 @@ class Resume extends React.Component {
                       tagName="span"
                       id="resume.email"
                     />
-                    <span> nnecec@outlook.com</span>
+                    <span>: nnecec@outlook.com</span>
                   </div>
 
                   <div className="item">
@@ -71,12 +71,12 @@ class Resume extends React.Component {
                       tagName="span"
                       id="resume.phone"
                     />
-                    <span> 17557284628</span>
+                    <span>: 17557284628</span>
                   </div>
 
                   <div className="item">
                     <span>Github</span>
-                    <a href="https://github.com/nnecec" target="_blank"> github.com/nnecec</a>
+                    <a href="https://github.com/nnecec" target="_blank">: github.com/nnecec</a>
                   </div>
                 </div>
               </div>

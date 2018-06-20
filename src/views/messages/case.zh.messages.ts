@@ -1,7 +1,7 @@
 export default {
   // repository
   'repository.personal': '个人项目',
-  'repository.nnecec-react.desc': '个人网站的编译前项目。使用 Parcel 作为构建工具，主要为了尝试与 Webpack 不同的工具，并且尝到了零配置的甜头，可是零配置却让有些需要配置的地方感到不顺手。使用的 TypeScript + React 开发，MobX 进行状态管理。样式采用的是 PostCSS，但在开发中慢慢使用 styled-components 进行替换。多语言的功能在开发过程中变得繁琐，但是结果表现确实非常好的。',
+  'repository.nnecec-react.desc': '使用 Parcel 构建，React 框架编写的个人网站。<br/><br/>使用 Parcel 主要为了尝试与 Webpack 不同的构建工具，并且尝到了零配置的甜头，可是零配置却让有些需要配置的地方感到不顺手。使用的 TypeScript + React 开发，MobX 进行状态管理。样式使用 PostCSS 作为预处理工具，但在 React 得开发中，越来越觉得需要样式组件化，一方面方便开发，一方面局部样式不需要考虑对全局的影响。慢慢使用 styled-components 进行替换。多语言的功能使开发变得繁琐，但是结果表现确实非常出色实用。',
   'repository.ecblog-server.desc': '使用 Node.js, TypeScript, GraphQL, Koa, MongoDB 搭建的博客后端服务。<br/><br/>采用 Koa2 框架，配合 GraphQL 搭建的后端服务，数据存储选择了 MongoDB，因为之前有过相关数据库经验，且 mongoose 在 Node.js 中使用非常方便。用户验证使用 Passport + jsonwebtoken，并在前端缓存 token，达到保存登陆的功能。其他接口即是数据增删查改的功能。',
   'repository.ecblog-admin.desc': '使用 Angular + TypeScript + ngrx 搭建的博客后台管理系统。<br/><br/>Angular大而全的框架作为后台系统非常适合，但是其门槛较 React/Vue 来说稍微高一些。',
 
