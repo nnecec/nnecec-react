@@ -20,7 +20,7 @@ class Me extends React.Component {
 
   render() {
     return (
-      <div className="me">
+      <div className="me read">
         <div className="intro">
           <FormattedHTMLMessage
             tagName="p"

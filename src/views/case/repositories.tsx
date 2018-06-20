@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedHTMLMessage } from 'react-intl';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
-import { Tag, Fade } from '../../components';
+import { Tag, Fade } from 'components';
 
 class Repositories extends React.Component {
 
@@ -22,7 +22,7 @@ class Repositories extends React.Component {
             <Grid>
               <Row>
                 <Col sm={12} md={4} className="title">
-                  <FormattedMessage
+                  <FormattedHTMLMessage
                     tagName="p"
                     id="repository.work"
                   />
@@ -71,7 +71,7 @@ class Repositories extends React.Component {
             <Grid>
               <Row>
                 <Col sm={12} md={4} className="title">
-                  <FormattedMessage
+                  <FormattedHTMLMessage
                     tagName="div"
                     id="repository.personal"
                   />
@@ -83,7 +83,7 @@ class Repositories extends React.Component {
                       <h3>
                         <a href="https://github.com/nnecec/nnecec-react" target="_blank">nnecec-react</a>
                       </h3>
-                      <FormattedMessage
+                      <FormattedHTMLMessage
                         tagName="p"
                         id="repository.nnecec-react.desc"
                       />
@@ -97,7 +97,7 @@ class Repositories extends React.Component {
                     </li>
                     <li className="repository">
                       <h3>ecblog-server</h3>
-                      <FormattedMessage
+                      <FormattedHTMLMessage
                         tagName="p"
                         id="repository.ecblog-server.desc"
                       />
@@ -112,7 +112,7 @@ class Repositories extends React.Component {
                     </li>
                     <li className="repository">
                       <h3>ecblog-admin</h3>
-                      <FormattedMessage
+                      <FormattedHTMLMessage
                         tagName="p"
                         id="repository.ecblog-admin.desc"
                       />
