@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FormattedHTMLMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { Tag, Fade } from 'components';
@@ -22,7 +22,7 @@ class Repositories extends React.Component {
             <Grid>
               <Row>
                 <Col sm={12} md={4} className="title">
-                  <FormattedHTMLMessage
+                  <FormattedMessage
                     tagName="p"
                     id="repository.work"
                   />
@@ -71,8 +71,8 @@ class Repositories extends React.Component {
             <Grid>
               <Row>
                 <Col sm={12} md={4} className="title">
-                  <FormattedHTMLMessage
-                    tagName="div"
+                  <FormattedMessage
+                    tagName="p"
                     id="repository.personal"
                   />
                 </Col>

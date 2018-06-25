@@ -10,7 +10,7 @@ class Fade extends React.Component {
     super(props);
     this.state = {
       opacity: 0,
-      y: 20,
+      y: 30,
     };
   }
 
@@ -27,7 +27,7 @@ class Fade extends React.Component {
 
     return (
       <Spring
-        from={{ opacity: 0, y: 20 }}
+        from={{ opacity: 0, y: 30 }}
         to={{ opacity, y }}
         impl={TimingAnimation}
         config={{ duration: 400 }}

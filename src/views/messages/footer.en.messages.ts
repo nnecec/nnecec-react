@@ -1,3 +1,3 @@
 export default {
-  'footer.designed': 'Designed by nnecec.',
+  'footer.designed': 'Designed and developed by nnecec.',
 };

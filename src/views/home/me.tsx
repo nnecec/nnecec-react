@@ -33,6 +33,12 @@ class Me extends React.Component {
             tagName="p"
             id="home.me.description"
           />
+          <Link to="/case">
+            <FormattedMessage
+              tagName="p"
+              id="home.me.projects"
+            />
+          </Link>
         </div>
       </div>
     );
