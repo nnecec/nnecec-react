@@ -1,9 +1,10 @@
 export default {
   // repository
   'repository.personal': '个人项目',
-  'repository.nnecec-react.desc': '由 Parcel 构建，React 框架编写的个人网站，使用了 TypeScript。<br/><br/>选择 Parcel 主要为了尝试与 Webpack 不同的构建工具，对于小型网站零配置预估也是可行的，可是零配置却让有些需要配置的地方感到不顺手。<br/>项目主体采用 TypeScript + React 开发，MobX 进行状态管理。样式使用 PostCSS 作为预处理工具，但在开发中，越来越觉得需要样式组件化，一方面方便开发，一方面局部样式不需要考虑对全局的影响，于是逐渐使用 styled-components 进行替换。多语言的功能使开发变得繁琐，但是结果表现确实非常出色实用。',
+  'repository.nnecec-react.desc': '由 Parcel 构建，React 框架编写的个人信息展示网站，使用了 TypeScript 编程语言。<br/><br/>选择 Parcel 主要为了尝试与 Webpack 不同的构建工具，对于小型网站零配置预估也是可行的，可是零配置却让有些需要配置的地方感到不方便使用。<br/>状态机上使用 MobX 进行状态管理，样式使用 PostCSS 作为预处理工具。但在开发中，越来越觉得需要样式组件化，一方面方便开发，一方面局部样式不需要考虑对全局的影响，于是逐渐使用 styled-components 进行替换。并通过 react-intl 加入了多语言支持的功能。多语言使开发变得繁琐，但是结果表现确实非常出色实用。',
 
-  'repository.ecblog-server.desc': '使用 Node.js, TypeScript, GraphQL, Koa, MongoDB 搭建的博客后端服务。<br/><br/>采用 Koa2 框架，配合 GraphQL 搭建的后端服务。因为之前有过相关数据库经验，且 mongoose 在 Node.js 中使用非常方便，数据存储选择了 MongoDB。用户验证使用 Passport + jsonwebtoken，并在前端缓存 token，达到保存登陆的功能。其他接口基本是数据增删查改的功能。',
+  'repository.ecblog-server.desc': '使用 Node.js, TypeScript, GraphQL, Koa, MongoDB 搭建的博客后端服务。<br/><br/>采用 Koa2 框架，配合 GraphQL 搭建的后端服务。因为之前有过相关数据库经验，且 mongoose 在 Node.js 中使用非常方便，数据存储选择了 MongoDB。用户验证使用 Passport + jsonwebtoken，并在前端缓存 token，达到保存登陆的功能。目前实现的其他接口基本是数据的增删改查。',
+  
   'repository.ecblog-admin.desc': '由 Angular-Cli 构建的 Angular 项目。 Angular + TypeScript + ngrx 搭建的博客后台管理系统。<br/><br/>Angular 大而全的框架作为后台系统非常适合且易用，因为全面所以丧失了一些灵活性。但是其门槛较 React/Vue 来说稍高一些。因为后端采用了 GraphQL，在该项目中也加入了 Apollo-Angular 协助客户端。',
 
   'repository.work': '工作项目',

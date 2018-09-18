@@ -6,15 +6,12 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 class Me extends React.Component {
   constructor(props) {
     super(props);
-    this.img = React.createRef();
-    this.desc = React.createRef();
     this.state = {
       isTransition: false,
     };
   }
 
   handleEnter = () => {
-    const { isTransition } = this.state;
 
   }
 
@@ -35,7 +32,7 @@ class Me extends React.Component {
           />
           <Link to="/case">
             <FormattedMessage
-              tagName="p"
+              tagName="span"
               id="home.me.projects"
             />
           </Link>

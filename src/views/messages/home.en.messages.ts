@@ -12,4 +12,6 @@ export default {
     'As a developer, I enjoy the job and I want to develop a product that is efficient and beautiful.</br>' +
     'My career goal is to be an excellent engineer in the industry.</br></br>' +
     'Outside of work, I may be watching movies, cooking, shopping, playing League of Legends, reading books and so on.</br>',
+
+  'home.me.projects': 'View my projects.',
 };
