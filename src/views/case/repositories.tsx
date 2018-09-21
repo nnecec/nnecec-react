@@ -132,6 +132,65 @@ class Repositories extends React.Component {
                     </div>
                   </a>
                 </Fade>
+                <Fade>
+                  <a className="repository no read" href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
+                    <h3>ecblog-admin</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.ecblog-admin.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'TypeScript'} />
+                      <Tag title={'Angular'} />
+                      <Tag title={'Apollo'} />
+                      <Tag title={'RxJS'} />
+                      <Tag title={'SCSS'} />
+                    </div>
+                  </a>
+                </Fade>
+                <Fade>
+                  <a className="repository no read" href="https://github.com/nnecec/nnecec-luoo" target="_blank">
+                    <h3>nnecec-luoo</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.nnecec-luoo.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'electron'} />
+                      <Tag title={'JavaScript'} />
+                      <Tag title={'React'} />
+                      <Tag title={'MobX'} />
+                      <Tag title={'SCSS'} />
+                      <Tag title={'Webpack'} />
+                    </div>
+                  </a>
+                </Fade>
+                <Fade>
+                  <a className="repository no read" href="https://github.com/nnecec/necook" target="_blank">
+                    <h3>necook</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.necook.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'markdown'} />
+                      <Tag title={'JavaScript'} />
+                    </div>
+                  </a>
+                </Fade>
+                <Fade>
+                  <a className="repository no read" href="https://github.com/nnecec/leetec" target="_blank">
+                    <h3>leetec</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.leetec.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'JavaScript'} />
+                      <Tag title={'AVA'} />
+                    </div>
+                  </a>
+                </Fade>
               </Col>
             </Row>
           </Grid>

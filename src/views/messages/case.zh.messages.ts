@@ -4,8 +4,13 @@ export default {
   'repository.nnecec-react.desc': '由 Parcel 构建，React 框架编写的个人信息展示网站，使用了 TypeScript 编程语言。<br/><br/>选择 Parcel 主要为了尝试与 Webpack 不同的构建工具，对于小型网站零配置预估也是可行的，可是零配置却让有些需要配置的地方感到不方便使用。<br/>状态机上使用 MobX 进行状态管理，样式使用 PostCSS 作为预处理工具。但在开发中，越来越觉得需要样式组件化，一方面方便开发，一方面局部样式不需要考虑对全局的影响，于是逐渐使用 styled-components 进行替换。并通过 react-intl 加入了多语言支持的功能。多语言使开发变得繁琐，但是结果表现确实非常出色实用。',
 
   'repository.ecblog-server.desc': '使用 Node.js, TypeScript, GraphQL, Koa, MongoDB 搭建的博客后端服务。<br/><br/>采用 Koa2 框架，配合 GraphQL 搭建的后端服务。因为之前有过相关数据库经验，且 mongoose 在 Node.js 中使用非常方便，数据存储选择了 MongoDB。用户验证使用 Passport + jsonwebtoken，并在前端缓存 token，达到保存登陆的功能。目前实现的其他接口基本是数据的增删改查。',
-  
+
   'repository.ecblog-admin.desc': '由 Angular-Cli 构建的 Angular 项目。 Angular + TypeScript + ngrx 搭建的博客后台管理系统。<br/><br/>Angular 大而全的框架作为后台系统非常适合且易用，因为全面所以丧失了一些灵活性。但是其门槛较 React/Vue 来说较高。因为后端采用了 GraphQL，在该项目中也加入了 Apollo-Angular 协助客户端。',
+  'repository.necook.desc': '个人笔记。主要收集、整理、记录前端相关的知识，以及一些感想。项目几乎完全使用 markdown 记录。',
+
+  'repository.leetec.desc': 'LeetCode 习题本。<br/><br/>使用 JavaScript 完成题目，并通过 AVA 测试。<small>有部分参考开源社区完成的答案</small>',
+
+  'repository.nnecec-luoo.desc': 'luoo 落网的第三方播放器。目前仅支持使用"期刊"部分。<br/><br/>通过 node 爬取落网数据，并存入 MongoDB 数据库。客户端使用 Electron + React 构建。仅在本地完成，尚未打包。',
 
   'repository.work': '工作项目',
   'repository.malianghang.desc': '使用 Angular 1 框架开发的一套官方电商网站和后台系统，使用 RequiresJS 完成 AMD 模式开发。移动端使用 ionic，桌面端使用 Bootstrap / material。后端主要使用 LeanCloud 第三方云服务平台;<br/><br/>在项目中主要负责前端开发工作，编写页面及交互效果，参与部分接口开发。<br/><br/>作为第一份工作，学习到模块化开发、前端自动化开发，能够完成前端组件编写或改写的需求。完成复杂布局，确保产品兼容性。也由于创业公司在设计和产品上的空缺，在开发过程中同时兼顾对产品的思考及建议。力求在项目中追求更优雅的代码、更高的性能效率。',

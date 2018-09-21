@@ -6,6 +6,12 @@ export default {
 
   'repository.ecblog-admin.desc': 'An Angular project built by Angular-Cli. Angular + TypeScript + ngrx built a blog background management system. <br/>Angular\'s large and full framework is very suitable and easy to use as a back-end system, because it is completely lost. But its threshold is slightly higher than React/Vue. Because the backend uses GraphQL, Apollo-Angular is also included in the project to assist the client.',
 
+  'repository.necook.desc': 'Personal notes. Mainly collect, organize, and record front-end related knowledge, and some thoughts. The project uses markdown records almost exclusively.',
+  'repository.leetec.desc': 'LeetCode problem book. Complete the topic with JavaScript and test the code with AVA. <small> There are some references to the open source community to complete the answer</small>',
+
+  'repository.nnecec-luoo.desc': 'A third-party player for luoo.net. <br/>Crawling page data through node and saving it into the MongoDB database. The client is built using Electron + React. Completed locally only, not yet packaged.',
+
+
   'repository.work': 'Work Projects',
   'repository.malianghang.desc': 'A set of official e-commerce websites and back-end systems developed using the Angular 1 framework, using RequiresJS to complete AMD mode development. The mobile uses ionic and the desktop uses Bootstrap / material. The back-end mainly uses the LeanCloud third-party cloud service platform; <br/>In the project, it is mainly responsible for front-end development work, writing pages and interaction effects, and participating in part of interface development. <br/>As the first job, we learned modular development, front-end automation development, and the ability to write or rewrite front-end components. Complete complex layouts to ensure product compatibility. Also due to the vacancies in the design and products of the startup, the development and consideration of the product at the same time. Strive to pursue more elegant code and higher performance efficiency in the project.',
 
