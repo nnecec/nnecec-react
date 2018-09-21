@@ -1,10 +1,10 @@
 {
   "short_name": "nnecec",
   "name": "nnecec-react",
-  "description": "This is nnecec's react website.",
+  "description": "This is nnecec's website.",
   "icons": [
     {
-      "src": "144x144.png",
+      "src": "./public/favicon-144x144.png",
       "type": "image/png",
       "sizes": "144x144"
     }

@@ -17,19 +17,21 @@ class Repositories extends React.Component {
   render() {
     return (
       <div className="repositories">
-        <Fade>
-          <div className="container work">
-            <Grid>
-              <Row>
-                <Col sm={12} md={4} className="title">
+        <div className="container work">
+          <Grid>
+            <Row>
+              <Col sm={12} md={3} className="title">
+                <Fade>
                   <FormattedMessage
                     tagName="p"
                     id="repository.work"
                   />
-                </Col>
+                </Fade>
+              </Col>
 
-                <Col sm={12} md={8}>
-                  <ul className="read">
+              <Col sm={12} md={8}>
+                <ul className="read">
+                  <Fade>
                     <li className="repository ">
                       <h3>admin.dianwoda</h3>
                       <FormattedHTMLMessage
@@ -44,6 +46,8 @@ class Repositories extends React.Component {
                         <Tag title={'SCSS'} />
                       </div>
                     </li>
+                  </Fade>
+                  <Fade>
                     <li className="repository">
                       <h3>malianghang.com</h3>
                       <FormattedHTMLMessage
@@ -58,26 +62,28 @@ class Repositories extends React.Component {
                         <Tag title={'SCSS'} />
                       </div>
                     </li>
-                  </ul>
-                </Col>
-              </Row>
-            </Grid>
+                  </Fade>
+                </ul>
+              </Col>
+            </Row>
+          </Grid>
 
-          </div>
-        </Fade>
+        </div>
 
         <div className="container">
-          <Fade>
-            <Grid>
-              <Row>
-                <Col sm={12} md={4} className="title">
+          <Grid>
+            <Row>
+              <Col sm={12} md={3} className="title">
+                <Fade>
                   <FormattedMessage
                     tagName="p"
                     id="repository.personal"
                   />
-                </Col>
+                </Fade>
+              </Col>
 
-                <Col sm={12} md={8}>
+              <Col sm={12} md={8}>
+                <Fade>
                   <a className="repository no read" href="https://github.com/nnecec/nnecec-react" target="_blank">
                     <h3>nnecec-react</h3>
                     <FormattedHTMLMessage
@@ -92,6 +98,8 @@ class Repositories extends React.Component {
                       <Tag title={'PostCSS'} />
                     </div>
                   </a>
+                </Fade>
+                <Fade>
                   <a className="repository no read" href="https://github.com/nnecec/ecblog-server" target="_blank">
                     <h3>ecblog-server</h3>
                     <FormattedHTMLMessage
@@ -107,6 +115,8 @@ class Repositories extends React.Component {
                       <Tag title={'Passport'} />
                     </div>
                   </a>
+                </Fade>
+                <Fade>
                   <a className="repository no read" href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
                     <h3>ecblog-admin</h3>
                     <FormattedHTMLMessage
@@ -121,10 +131,10 @@ class Repositories extends React.Component {
                       <Tag title={'SCSS'} />
                     </div>
                   </a>
-                </Col>
-              </Row>
-            </Grid>
-          </Fade>
+                </Fade>
+              </Col>
+            </Row>
+          </Grid>
         </div>
       </div>
     );

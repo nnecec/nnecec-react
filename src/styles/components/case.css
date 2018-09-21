@@ -6,7 +6,7 @@
 
     & .title {
       text-align: right;
-      padding: 6px 50px  6px 0;
+      padding: 4px 50px  4px 0;
       color: var(--theme-color);
     }
 
@@ -19,14 +19,9 @@
   }
 
   & .repository {
-    border: 1px solid #eaecef;
     padding: 16px;
-    border-radius: 3px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     display: block;
-
-    &:hover {
-    }
 
     & h3 {
       font-size: 16px;
