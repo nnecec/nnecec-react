@@ -1,23 +1,28 @@
 import * as React from 'react';
 import {
   FormattedMessage,
-} from 'react-intl';
+} from 'react-intl'
 
-class Footer extends React.Component {
+import { FooterStyled } from './styles/footerStyled'
+
+const pkg = require('../../../package.json')
+
+export default class Footer extends React.Component {
   render() {
     return (
-      <footer>
+      <FooterStyled>
         <div className="container footer">
-          <span className="theme">
+          <span className="version">
+            <span className="theme">Blue</span> {pkg.version}
+          </span>
+          <span className="designed">
             <FormattedMessage
               tagName="span"
               id="footer.designed"
             />
           </span>
         </div>
-      </footer>
-    );
+      </FooterStyled>
+    )
   }
 }
-
-export default Footer;

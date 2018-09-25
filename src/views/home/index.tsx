@@ -23,9 +23,7 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="home-section case">
-          <div className="container">
-            <p>nnecec</p>
-          </div>
+          
         </section>
       </div>
     );
