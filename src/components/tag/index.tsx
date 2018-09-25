@@ -29,6 +29,9 @@ const spanColor = {
   RequireJS: '#398AD6',
   SCSS: '#CB6899',
   'Node.js': '#026D00',
+  AVA: '#0B1749',
+  markdown: '#000000',
+  Electron: '#9FEAF9'
 };
 
 const StyledSpan = styled.span`
@@ -40,8 +43,13 @@ const StyledSpan = styled.span`
   margin-right: 4px;
 `;
 
-class Tag extends React.Component {
+interface TagProps {
+  title: TitleEnum
+}
 
+interface TagState { }
+
+export default class Tag extends React.Component<TagProps, TagState> {
   constructor(props) {
     super(props);
   }
@@ -57,28 +65,27 @@ class Tag extends React.Component {
   }
 }
 
-Tag.propTypes = {
-  title: PropTypes.oneOf([
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'MobX',
-    'Parcel',
-    'PostCSS',
-    'GraphQL',
-    'Koa',
-    'mongoose',
-    'Passport',
-    'Angular',
-    'Apollo',
-    'RxJS',
-    'Webpack',
-    'Redux',
-    'Grunt',
-    'RequireJS',
-    'SCSS',
-    'Node.js',
-  ]),
+enum TitleEnum {
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'MobX',
+  'Parcel',
+  'PostCSS',
+  'GraphQL',
+  'Koa',
+  'mongoose',
+  'Passport',
+  'Angular',
+  'Apollo',
+  'RxJS',
+  'Webpack',
+  'Redux',
+  'Grunt',
+  'RequireJS',
+  'SCSS',
+  'Node.js',
+  'AVA',
+  'markdown',
+  'Electron'
 };
-
-export default Tag;

@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { Tag, Fade } from 'components';
 
-class Repositories extends React.Component {
+export default class Repositories extends React.Component {
 
   constructor(props) {
     super(props);
@@ -156,7 +156,7 @@ class Repositories extends React.Component {
                       id="repository.nnecec-luoo.desc"
                     />
                     <div className="tag">
-                      <Tag title={'electron'} />
+                      <Tag title={'Electron'} />
                       <Tag title={'JavaScript'} />
                       <Tag title={'React'} />
                       <Tag title={'MobX'} />
@@ -200,4 +200,3 @@ class Repositories extends React.Component {
   }
 }
 
-export default Repositories;

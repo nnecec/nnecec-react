@@ -13,10 +13,6 @@
     color: var(--black-color);
   }
 
-  & .item {
-    line-height: 1.4;
-  }
-
   & .basic-info {
     flex-direction: column;
     background-size: cover;
