@@ -9,7 +9,7 @@ import Footer from './shared/footer';
 import Header from './shared/header';
 import Home from './home';
 import Case from './case/case';
-import Resume from './about/resume';
+import Resume from './resume/resume';
 
 import '../styles/app.css';
 

@@ -12,9 +12,7 @@ class Case extends React.Component {
   }
 
   componentWillMount() {
-    const messages = defineMessages({
-      luoo: { id: 'case.luoo' },
-    });
+    
   }
 
   render() {
