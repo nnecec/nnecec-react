@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
-import NNecec from './nnecec';
 import Me from './me';
 
 @inject('commonStore')

@@ -37,7 +37,7 @@ class Resume extends React.Component {
 
     return (
       <div className="resume">
-        <Basic />
+        <Basic height={this.viewHeight} />
         <Experience />
         <Skill />
       </div>

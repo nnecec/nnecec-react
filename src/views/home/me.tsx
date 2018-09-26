@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Waypoint from 'react-waypoint';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 class Me extends React.Component {

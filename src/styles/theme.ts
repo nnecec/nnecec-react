@@ -1,28 +1,27 @@
 import * as palx from 'palx'
 
-const red = '#e42d42'
-const blue = '#2d9ce4'
-export const palette = palx(blue)
+const primary = '1C4598'
+export const palette = palx(primary)
 
 export const grays = {
   darker: '#121217',
   dark: '#17171d',
-  black: palette.black,
-  slate: palette.gray[8],
-  silver: palette.gray[7],
-  smoke: palette.gray[2],
-  snow: palette.gray[0],
+  black: palette.gray[9],
+  gray: palette.gray[7],
+  silver: palette.gray[5],
+  smoke: palette.gray[3],
+  snow: palette.gray[1],
   white: '#ffffff'
 }
 
 export const brand = {
-  primary: red,
-  accent: palette.indigo[4],
+  primary,
+  accent: palette.cyan[4],
   success: palette.teal[5],
   info: palette.blue[5],
   warning: palette.orange[5],
-  error: palette.red[7],
-  muted: grays.silver
+  error: palette.red[5],
+  muted: palette.gray[6]
 }
 
 export const colors = {

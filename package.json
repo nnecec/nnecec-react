@@ -12,7 +12,8 @@
   "author": "",
   "license": "MIT",
   "alias": {
-    "components": "./src/components/"
+    "components": "./src/components/",
+    "styles": "./src/styles/"
   },
   "dependencies": {
     "mobx": "^5.1.2",

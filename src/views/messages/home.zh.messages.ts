@@ -14,6 +14,6 @@ export default {
     '你可以在这个网站中查看我的个人基本信息</br>' +
     '和我的工作以及一些个人的学习项目</br>',
 
-  'home.me.projects': '查看我的项目经历',
+  'home.me.projects': '查看我的项目经历 ➡',
 
 };

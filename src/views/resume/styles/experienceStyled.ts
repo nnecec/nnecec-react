@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
 export const ExperienceItemStyled = styled.div`
-  line-height: 1.4;
+  margin-bottom: 80px;
+
+  h2 {
+    font-size: 14px;
+  }
+
+  @media (min-width: 700px) {
+    padding-right: 30%;
+  }
 `
