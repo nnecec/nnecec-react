@@ -8,6 +8,7 @@ import { CaseTitleStyled, CaseRepoStyled } from './styles/caseStyled'
 import { ReadStyled } from 'styles/text'
 
 const dwdPNG = require('../../assets/dwd.png')
+const mlabPNG = require('../../assets/mlab.png')
 
 export default class Repositories extends React.Component {
 
@@ -57,6 +58,7 @@ export default class Repositories extends React.Component {
                 </Fade>
                 <Fade>
                   <CaseRepoStyled>
+                    <img src={mlabPNG} alt="" width="100%" />
                     <h3>malianghang.com</h3>
                     <FormattedHTMLMessage
                       tagName="p"
