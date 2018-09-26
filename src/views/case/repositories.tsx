@@ -4,6 +4,11 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { Tag, Fade } from 'components';
 
+import { CaseTitleStyled, CaseRepoStyled } from './styles/caseStyled'
+import { ReadStyled } from 'styles/text'
+
+const dwdPNG = require('../../assets/dwd.png')
+
 export default class Repositories extends React.Component {
 
   constructor(props) {
@@ -20,50 +25,52 @@ export default class Repositories extends React.Component {
         <div className="container work">
           <Grid>
             <Row>
-              <Col sm={12} md={3} className="title">
+              <Col sm={12} md={3}>
                 <Fade>
-                  <FormattedMessage
-                    tagName="p"
-                    id="repository.work"
-                  />
+                  <CaseTitleStyled>
+                    <FormattedMessage
+                      tagName="p"
+                      id="repository.work"
+                    />
+                  </CaseTitleStyled>
                 </Fade>
               </Col>
 
               <Col sm={12} md={8}>
-                <ul className="read">
-                  <Fade>
-                    <li className="repository ">
-                      <h3>admin.dianwoda</h3>
-                      <FormattedHTMLMessage
-                        tagName="p"
-                        id="repository.dianwoda.desc"
-                      />
-                      <div className="tag">
-                        <Tag title={'JavaScript'} />
-                        <Tag title={'React'} />
-                        <Tag title={'Redux'} />
-                        <Tag title={'Webpack'} />
-                        <Tag title={'SCSS'} />
-                      </div>
-                    </li>
-                  </Fade>
-                  <Fade>
-                    <li className="repository">
-                      <h3>malianghang.com</h3>
-                      <FormattedHTMLMessage
-                        tagName="p"
-                        id="repository.malianghang.desc"
-                      />
-                      <div className="tag">
-                        <Tag title={'JavaScript'} />
-                        <Tag title={'Angular'} />
-                        <Tag title={'Grunt'} />
-                        <Tag title={'RequireJS'} />
-                        <Tag title={'SCSS'} />
-                      </div>
-                    </li>
-                  </Fade>
-                </ul>
+                <Fade>
+                  <CaseRepoStyled>
+                    <img src={dwdPNG} alt="" width="100%" />
+
+                    <h3>admin.dianwoda</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.dianwoda.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'JavaScript'} />
+                      <Tag title={'React'} />
+                      <Tag title={'Redux'} />
+                      <Tag title={'Webpack'} />
+                      <Tag title={'SCSS'} />
+                    </div>
+                  </CaseRepoStyled>
+                </Fade>
+                <Fade>
+                  <CaseRepoStyled>
+                    <h3>malianghang.com</h3>
+                    <FormattedHTMLMessage
+                      tagName="p"
+                      id="repository.malianghang.desc"
+                    />
+                    <div className="tag">
+                      <Tag title={'JavaScript'} />
+                      <Tag title={'Angular'} />
+                      <Tag title={'Grunt'} />
+                      <Tag title={'RequireJS'} />
+                      <Tag title={'SCSS'} />
+                    </div>
+                  </CaseRepoStyled>
+                </Fade>
               </Col>
             </Row>
           </Grid>
@@ -73,18 +80,20 @@ export default class Repositories extends React.Component {
         <div className="container">
           <Grid>
             <Row>
-              <Col sm={12} md={3} className="title">
+              <Col sm={12} md={3}>
                 <Fade>
-                  <FormattedMessage
-                    tagName="p"
-                    id="repository.personal"
-                  />
+                  <CaseTitleStyled>
+                    <FormattedMessage
+                      tagName="p"
+                      id="repository.personal"
+                    />
+                  </CaseTitleStyled>
                 </Fade>
               </Col>
 
               <Col sm={12} md={8}>
                 <Fade>
-                  <a className="repository no read" href="https://github.com/nnecec/nnecec-react" target="_blank">
+                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-react" target="_blank">
                     <h3>nnecec-react</h3>
                     <FormattedHTMLMessage
                       tagName="p"
@@ -97,10 +106,10 @@ export default class Repositories extends React.Component {
                       <Tag title={'Parcel'} />
                       <Tag title={'PostCSS'} />
                     </div>
-                  </a>
+                  </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <a className="repository no read" href="https://github.com/nnecec/ecblog-server" target="_blank">
+                  <CaseRepoStyled href="https://github.com/nnecec/ecblog-server" target="_blank">
                     <h3>ecblog-server</h3>
                     <FormattedHTMLMessage
                       tagName="p"
@@ -114,10 +123,10 @@ export default class Repositories extends React.Component {
                       <Tag title={'mongoose'} />
                       <Tag title={'Passport'} />
                     </div>
-                  </a>
+                  </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <a className="repository no read" href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
+                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
                     <h3>ecblog-admin</h3>
                     <FormattedHTMLMessage
                       tagName="p"
@@ -130,10 +139,10 @@ export default class Repositories extends React.Component {
                       <Tag title={'RxJS'} />
                       <Tag title={'SCSS'} />
                     </div>
-                  </a>
+                  </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <a className="repository no read" href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
+                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
                     <h3>ecblog-admin</h3>
                     <FormattedHTMLMessage
                       tagName="p"
@@ -146,10 +155,10 @@ export default class Repositories extends React.Component {
                       <Tag title={'RxJS'} />
                       <Tag title={'SCSS'} />
                     </div>
-                  </a>
+                  </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <a className="repository no read" href="https://github.com/nnecec/nnecec-luoo" target="_blank">
+                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-luoo" target="_blank">
                     <h3>nnecec-luoo</h3>
                     <FormattedHTMLMessage
                       tagName="p"
@@ -163,10 +172,10 @@ export default class Repositories extends React.Component {
                       <Tag title={'SCSS'} />
                       <Tag title={'Webpack'} />
                     </div>
-                  </a>
+                  </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <a className="repository no read" href="https://github.com/nnecec/necook" target="_blank">
+                  <CaseRepoStyled href="https://github.com/nnecec/necook" target="_blank">
                     <h3>necook</h3>
                     <FormattedHTMLMessage
                       tagName="p"
@@ -176,10 +185,10 @@ export default class Repositories extends React.Component {
                       <Tag title={'markdown'} />
                       <Tag title={'JavaScript'} />
                     </div>
-                  </a>
+                  </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <a className="repository no read" href="https://github.com/nnecec/leetec" target="_blank">
+                  <CaseRepoStyled href="https://github.com/nnecec/leetec" target="_blank">
                     <h3>leetec</h3>
                     <FormattedHTMLMessage
                       tagName="p"
@@ -189,7 +198,7 @@ export default class Repositories extends React.Component {
                       <Tag title={'JavaScript'} />
                       <Tag title={'AVA'} />
                     </div>
-                  </a>
+                  </CaseRepoStyled>
                 </Fade>
               </Col>
             </Row>

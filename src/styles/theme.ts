@@ -3,11 +3,13 @@ import * as palx from 'palx'
 const primary = '1C4598'
 export const palette = palx(primary)
 
+console.log(palette)
+
 export const grays = {
   darker: '#121217',
   dark: '#17171d',
   black: palette.gray[9],
-  gray: palette.gray[7],
+  slate: palette.gray[7],
   silver: palette.gray[5],
   smoke: palette.gray[3],
   snow: palette.gray[1],
