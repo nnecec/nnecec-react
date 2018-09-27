@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
+import { Fade } from 'components'
+
 class Me extends React.Component {
   constructor(props) {
     super(props);
@@ -18,23 +20,29 @@ class Me extends React.Component {
     return (
       <div className="me read">
         <div className="intro">
-          <FormattedHTMLMessage
-            tagName="p"
-            id="home.me.intro"
-          />
+          <Fade>
+            <FormattedHTMLMessage
+              tagName="p"
+              id="home.me.intro"
+            />
+          </Fade>
         </div>
 
         <div className="description">
-          <FormattedHTMLMessage
-            tagName="p"
-            id="home.me.description"
-          />
-          <Link to="/case">
-            <FormattedMessage
-              tagName="span"
-              id="home.me.projects"
+          <Fade>
+            <FormattedHTMLMessage
+              tagName="p"
+              id="home.me.description"
             />
-          </Link>
+          </Fade>
+          <Fade>
+            <Link to="/case">
+              <FormattedMessage
+                tagName="span"
+                id="home.me.projects"
+              />
+            </Link>
+          </Fade>
         </div>
       </div>
     );

@@ -2,6 +2,8 @@ import * as React from 'react';
 import { inject, observer } from 'mobx-react'
 import { FormattedMessage } from 'react-intl'
 
+import { Fade } from 'components'
+
 import Basic from './basic'
 import Experience from './experience'
 import Skill from './skill'
@@ -38,8 +40,13 @@ class Resume extends React.Component {
     return (
       <div className="resume">
         <Basic height={this.viewHeight} />
-        <Experience />
-        <Skill />
+
+        <Fade>
+          <Experience />
+        </Fade>
+        <Fade>
+          <Skill />
+        </Fade>
       </div>
     )
   }

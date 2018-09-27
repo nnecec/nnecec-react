@@ -4,6 +4,7 @@ import {
 } from 'react-intl';
 import { Link } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
+
 import AdvancedStorage from '../../utils/advancedStorage';
 
 @inject('commonStore')
@@ -23,13 +24,14 @@ class Header extends React.Component {
     this.forceUpdate();
   }
 
+
   render() {
     return (
       <header className="ec-header">
         <div className="header-background"></div>
         <div className="container">
           <nav className="ec-header-logo">
-            <Link to="/" className="no">nnecec</Link>
+            <Link to="/" target="_self">nnecec</Link>
           </nav>
           <nav className="ec-header-menu">
             <ul>

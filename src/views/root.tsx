@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 import { IntlProvider, addLocaleData } from 'react-intl';
+import Waypoint from 'react-waypoint'
 
 import locale from '../locales';
 
@@ -38,6 +39,11 @@ class Root extends React.Component<any, any> {
     return result.default || result;
   }
 
+  handlePositionChange = (e) => {
+    console.log(e)
+  }
+
+
   public render() {
     const lang = this.props.commonStore.locale;
     const appLocale = this.getLocale(lang);
@@ -47,6 +53,7 @@ class Root extends React.Component<any, any> {
         <IntlProvider locale={appLocale.locale}
           messages={appLocale.messages}
           formats={appLocale.formats}>
+
           <div className="viewport font-hei">
             <Header></Header>
             <Switch>
