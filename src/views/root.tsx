@@ -12,6 +12,7 @@ import Case from './case/case';
 import Resume from './resume/resume';
 
 import '../styles/app.css';
+import { AppStyled } from '../styles/app';
 
 @inject('routing', 'commonStore')
 @withRouter
@@ -42,20 +43,22 @@ class Root extends React.Component<any, any> {
     const appLocale = this.getLocale(lang);
 
     return (
-      <IntlProvider locale={appLocale.locale}
-        messages={appLocale.messages}
-        formats={appLocale.formats}>
-        <div className="viewport font-hei">
-          <Header></Header>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/case" component={Case} />
-            <Route path="/about" component={Resume} />
-          </Switch>
+      <AppStyled>
+        <IntlProvider locale={appLocale.locale}
+          messages={appLocale.messages}
+          formats={appLocale.formats}>
+          <div className="viewport font-hei">
+            <Header></Header>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/case" component={Case} />
+              <Route path="/about" component={Resume} />
+            </Switch>
 
-          <Footer></Footer>
-        </div>
-      </IntlProvider>
+            <Footer></Footer>
+          </div>
+        </IntlProvider>
+      </AppStyled>
 
     );
   }

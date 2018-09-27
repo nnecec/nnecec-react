@@ -13,5 +13,5 @@ export default {
     'My career goal is to be an excellent engineer in the industry.</br></br>' +
     'Outside of work, I may be watching movies, cooking, playing League of Legends, reading books and so on.</br>',
 
-  'home.me.projects': 'View my projects. ➡',
+  'home.me.projects': 'View my projects. ◊',
 };

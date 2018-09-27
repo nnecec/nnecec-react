@@ -3,7 +3,7 @@ import {
   FormattedMessage,
 } from 'react-intl'
 
-import { FooterStyled } from './styles/footerStyled'
+import { FooterStyled, FooterVersionStyled, FooterSloganStyled } from './styles/footerStyled'
 
 const pkg = require('../../../package.json')
 
@@ -13,14 +13,14 @@ export default class Footer extends React.Component {
       <FooterStyled>
         <div className="container footer">
           <span className="version">
-            <span className="theme">Blue</span> {pkg.version}
+            <FooterVersionStyled>Blue</FooterVersionStyled> {pkg.version}
           </span>
-          <span className="designed">
+          <FooterSloganStyled>
             <FormattedMessage
               tagName="span"
               id="footer.designed"
             />
-          </span>
+          </FooterSloganStyled>
         </div>
       </FooterStyled>
     )

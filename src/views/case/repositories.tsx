@@ -95,111 +95,125 @@ export default class Repositories extends React.Component {
 
               <Col sm={12} md={8}>
                 <Fade>
-                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-react" target="_blank">
-                    <h3>nnecec-react</h3>
-                    <FormattedHTMLMessage
-                      tagName="p"
-                      id="repository.nnecec-react.desc"
-                    />
-                    <div className="tag">
-                      <Tag title={'TypeScript'} />
-                      <Tag title={'React'} />
-                      <Tag title={'MobX'} />
-                      <Tag title={'Parcel'} />
-                      <Tag title={'PostCSS'} />
-                    </div>
+                  <CaseRepoStyled>
+                    <a href="https://github.com/nnecec/nnecec-react" target="_blank">
+                      <h3>nnecec-react</h3>
+                      <FormattedHTMLMessage
+                        tagName="p"
+                        id="repository.nnecec-react.desc"
+                      />
+                      <div className="tag">
+                        <Tag title={'TypeScript'} />
+                        <Tag title={'React'} />
+                        <Tag title={'MobX'} />
+                        <Tag title={'Parcel'} />
+                        <Tag title={'PostCSS'} />
+                      </div>
+                    </a>
                   </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <CaseRepoStyled href="https://github.com/nnecec/ecblog-server" target="_blank">
-                    <h3>ecblog-server</h3>
-                    <FormattedHTMLMessage
-                      tagName="p"
-                      id="repository.ecblog-server.desc"
-                    />
-                    <div className="tag">
-                      <Tag title={'Node.js'} />
-                      <Tag title={'TypeScript'} />
-                      <Tag title={'GraphQL'} />
-                      <Tag title={'Koa'} />
-                      <Tag title={'mongoose'} />
-                      <Tag title={'Passport'} />
-                    </div>
+                  <CaseRepoStyled>
+                    <a href="https://github.com/nnecec/ecblog-server" target="_blank">
+                      <h3>ecblog-server</h3>
+                      <FormattedHTMLMessage
+                        tagName="p"
+                        id="repository.ecblog-server.desc"
+                      />
+                      <div className="tag">
+                        <Tag title={'Node.js'} />
+                        <Tag title={'TypeScript'} />
+                        <Tag title={'GraphQL'} />
+                        <Tag title={'Koa'} />
+                        <Tag title={'mongoose'} />
+                        <Tag title={'Passport'} />
+                      </div>
+                    </a>
                   </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
-                    <h3>ecblog-admin</h3>
-                    <FormattedHTMLMessage
-                      tagName="p"
-                      id="repository.ecblog-admin.desc"
-                    />
-                    <div className="tag">
-                      <Tag title={'TypeScript'} />
-                      <Tag title={'Angular'} />
-                      <Tag title={'Apollo'} />
-                      <Tag title={'RxJS'} />
-                      <Tag title={'SCSS'} />
-                    </div>
+                  <CaseRepoStyled>
+                    <a href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
+                      <h3>ecblog-admin</h3>
+                      <FormattedHTMLMessage
+                        tagName="p"
+                        id="repository.ecblog-admin.desc"
+                      />
+                      <div className="tag">
+                        <Tag title={'TypeScript'} />
+                        <Tag title={'Angular'} />
+                        <Tag title={'Apollo'} />
+                        <Tag title={'RxJS'} />
+                        <Tag title={'SCSS'} />
+                      </div>
+                    </a>
                   </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
-                    <h3>ecblog-admin</h3>
-                    <FormattedHTMLMessage
-                      tagName="p"
-                      id="repository.ecblog-admin.desc"
-                    />
-                    <div className="tag">
-                      <Tag title={'TypeScript'} />
-                      <Tag title={'Angular'} />
-                      <Tag title={'Apollo'} />
-                      <Tag title={'RxJS'} />
-                      <Tag title={'SCSS'} />
-                    </div>
+                  <CaseRepoStyled>
+                    <a href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
+                      <h3>ecblog-admin</h3>
+                      <FormattedHTMLMessage
+                        tagName="p"
+                        id="repository.ecblog-admin.desc"
+                      />
+                      <div className="tag">
+                        <Tag title={'TypeScript'} />
+                        <Tag title={'Angular'} />
+                        <Tag title={'Apollo'} />
+                        <Tag title={'RxJS'} />
+                        <Tag title={'SCSS'} />
+                      </div>
+                    </a>
                   </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <CaseRepoStyled href="https://github.com/nnecec/nnecec-luoo" target="_blank">
-                    <h3>nnecec-luoo</h3>
-                    <FormattedHTMLMessage
-                      tagName="p"
-                      id="repository.nnecec-luoo.desc"
-                    />
-                    <div className="tag">
-                      <Tag title={'Electron'} />
-                      <Tag title={'JavaScript'} />
-                      <Tag title={'React'} />
-                      <Tag title={'MobX'} />
-                      <Tag title={'SCSS'} />
-                      <Tag title={'Webpack'} />
-                    </div>
+                  <CaseRepoStyled>
+                    <a href="https://github.com/nnecec/nnecec-luoo" target="_blank">
+                      <h3>nnecec-luoo</h3>
+                      <FormattedHTMLMessage
+                        tagName="p"
+                        id="repository.nnecec-luoo.desc"
+                      />
+                      <div className="tag">
+                        <Tag title={'Electron'} />
+                        <Tag title={'JavaScript'} />
+                        <Tag title={'React'} />
+                        <Tag title={'MobX'} />
+                        <Tag title={'SCSS'} />
+                        <Tag title={'Webpack'} />
+                      </div>
+                    </a>
                   </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <CaseRepoStyled href="https://github.com/nnecec/necook" target="_blank">
-                    <h3>necook</h3>
-                    <FormattedHTMLMessage
-                      tagName="p"
-                      id="repository.necook.desc"
-                    />
-                    <div className="tag">
-                      <Tag title={'markdown'} />
-                      <Tag title={'JavaScript'} />
-                    </div>
+                  <CaseRepoStyled>
+                    <a href="https://github.com/nnecec/necook" target="_blank">
+                      <h3>necook</h3>
+                      <FormattedHTMLMessage
+                        tagName="p"
+                        id="repository.necook.desc"
+                      />
+                      <div className="tag">
+                        <Tag title={'markdown'} />
+                        <Tag title={'JavaScript'} />
+                      </div>
+                    </a>
                   </CaseRepoStyled>
                 </Fade>
                 <Fade>
-                  <CaseRepoStyled href="https://github.com/nnecec/leetec" target="_blank">
-                    <h3>leetec</h3>
-                    <FormattedHTMLMessage
-                      tagName="p"
-                      id="repository.leetec.desc"
-                    />
-                    <div className="tag">
-                      <Tag title={'JavaScript'} />
-                      <Tag title={'AVA'} />
-                    </div>
+                  <CaseRepoStyled>
+                    <a href="https://github.com/nnecec/leetec" target="_blank">
+                      <h3>leetec</h3>
+                      <FormattedHTMLMessage
+                        tagName="p"
+                        id="repository.leetec.desc"
+                      />
+                      <div className="tag">
+                        <Tag title={'JavaScript'} />
+                        <Tag title={'AVA'} />
+                      </div>
+                    </a>
                   </CaseRepoStyled>
                 </Fade>
               </Col>

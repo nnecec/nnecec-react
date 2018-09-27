@@ -1,9 +1,7 @@
 import * as palx from 'palx'
 
-const primary = '1C4598'
+const primary = '06f'
 export const palette = palx(primary)
-
-console.log(palette)
 
 export const grays = {
   darker: '#121217',
@@ -17,7 +15,7 @@ export const grays = {
 }
 
 export const brand = {
-  primary,
+  primary: `#${primary}`,
   accent: palette.cyan[4],
   success: palette.teal[5],
   info: palette.blue[5],

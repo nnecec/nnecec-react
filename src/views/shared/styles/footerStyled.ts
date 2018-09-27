@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import theme from 'styles/theme'
 
 export const FooterStyled = styled.footer`
   bottom: 0;
@@ -12,4 +13,13 @@ export const FooterStyled = styled.footer`
     border-top: 1px solid #eee;
     font-size: 12px;
   }
+`
+
+export const FooterVersionStyled = styled.span`
+  font-weight: 500;
+  color: ${theme.colors.primary};
+`
+
+export const FooterSloganStyled = styled.span`
+  color: ${theme.colors.silver};
 `
