@@ -1,9 +1,0 @@
-.about {
-  & .basic-info {
-    @nest & .contact {
-      & span {
-        margin: 0 5px;
-      }
-    }
-  }
-}

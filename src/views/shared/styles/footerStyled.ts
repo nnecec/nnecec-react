@@ -6,12 +6,11 @@ export const FooterStyled = styled.footer`
   width: 100%;
 
   .footer{
-    height: 90px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     border-top: 1px solid #eee;
     font-size: 12px;
+    padding: 30px 0;
   }
 `
 
@@ -22,4 +21,8 @@ export const FooterVersionStyled = styled.span`
 
 export const FooterSloganStyled = styled.span`
   color: ${theme.colors.silver};
+`
+
+export const FooterIconStyled = styled.a`
+  margin-right: 10px;
 `

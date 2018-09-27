@@ -2,11 +2,49 @@ import styled from 'styled-components'
 import theme from './theme'
 
 export const AppStyled = styled.div`
+  * {
+    box-sizing: border-box;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    user-select: none;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: ${theme.colors.black};
+    background-color: ${theme.colors.snow};
+    border-color: ${theme.colors.slate};
+
+    &:hover, &:focus {
+      color: ${theme.colors.primary};
+      border-color: ${theme.colors.primary};
+    }
+  }
+
+  ::selection {
+    background: ${theme.colors.accent};
+  }
+
   a {
     color: ${theme.colors.black};
     text-decoration: none;
 
-    :not([target=_blank]) {
+    :not([target]) {
       color: ${theme.colors.primary};
       display: inline-block;
       position: relative;
