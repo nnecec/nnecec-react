@@ -9,13 +9,4 @@ export default {
   'resume.work.dianwoda': 'Dianwoda is a “crowdsourcing mode real-time logistics platform”, dedicated to the end-to-end logistics service, providing users with fast, punctual and reliable delivery of goods directly from door to door in a crowdsourcing sharing mode. Dianwoda has been at the forefront of the real-time logistics industry. Up to now, the business scope of the company has covered more than 300 cities in China, with more than 3 million registered riders, providing instant delivery services for more than 1 million merchants and more than 100 million consumers. After Dianwoda established, it has received top strategic investment and resource injections such as Ant Financial, Innovation Workshop, Alibaba, and Cainiao Network',
 
   'resume.skill': 'Skills',
-
-  'resume.project': 'Project Experience',
-  'resume.project.malianghang': 'malianghang official website.',
-  'resume.project.dianwoda': 'dianwoda official website.',
-  'resume.project.dianwodaAdmin': 'dianwoda admin system.',
-  'resume.project.luoo': '',
-  'resume.project.ecblog': '',
-  'resume.project.necook': '',
-  'resume.project.nnecec': '',
 };

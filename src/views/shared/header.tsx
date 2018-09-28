@@ -1,27 +1,36 @@
-import * as React from 'react';
-import {
-  FormattedMessage,
-} from 'react-intl';
-import { Link } from 'react-router-dom';
-import { inject, observer } from 'mobx-react';
+import * as React from 'react'
+import { FormattedMessage } from 'react-intl'
+import { Link } from 'react-router-dom'
+import { inject, observer } from 'mobx-react'
+import { Trail, config } from 'react-spring'
 
-import AdvancedStorage from '../../utils/advancedStorage';
+import AdvancedStorage from '../../utils/advancedStorage'
+
+const navItems = [{
+  link: '/',
+  id: 'header.nav.home'
+}, {
+  link: '/case',
+  id: 'header.nav.case'
+}, {
+  link: '/about',
+  id: 'header.nav.about'
+},]
 
 @inject('commonStore')
 @observer
 class Header extends React.Component {
-  storage: AdvancedStorage;
+  storage: AdvancedStorage
 
   constructor(props: React.ReactPropTypes) {
-    super(props);
-
-    this.storage = new AdvancedStorage('lang');
+    super(props)
+    this.storage = new AdvancedStorage('lang')
   }
 
   setLocale = (lang) => {
-    this.props.commonStore.setLocale(lang);
-    this.storage.setLocal(lang);
-    this.forceUpdate();
+    this.props.commonStore.setLocale(lang)
+    this.storage.setLocal(lang)
+    this.forceUpdate()
   }
 
 
@@ -34,34 +43,27 @@ class Header extends React.Component {
             <Link to="/" target="_self">nnecec</Link>
           </nav>
           <nav className="ec-header-menu">
+
             <ul>
-              <li>
-                <Link to="/">
-                  <FormattedMessage
-                    tagName="span"
-                    id="header.nav.home"
-                    defaultMessage="Home"
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link to="/case">
-                  <FormattedMessage
-                    tagName="span"
-                    id="header.nav.case"
-                    defaultMessage="Case"
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link to="/about">
-                  <FormattedMessage
-                    tagName="span"
-                    id="header.nav.about"
-                    defaultMessage="About"
-                  />
-                </Link>
-              </li>
+              <Trail
+                from={{ opacity: 0, transform: 'translateY(10px)' }}
+                to={{ opacity: 1, transform: 'translateY(0)' }}
+                keys={navItems.map(nav => nav.id)}
+              >
+                {
+                  navItems.map(nav => styles =>
+                    <li style={styles}>
+                      <Link to={nav.link}>
+                        <FormattedMessage
+                          tagName="span"
+                          id={nav.id}
+                        />
+                      </Link>
+                    </li>
+                  )
+                }
+
+              </Trail>
               <li>
                 {
                   this.props.commonStore.locale === 'en-US' &&
@@ -76,8 +78,8 @@ class Header extends React.Component {
           </nav>
         </div>
       </header>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

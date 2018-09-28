@@ -11,7 +11,7 @@ export const grays = {
   silver: palette.gray[5],
   smoke: palette.gray[3],
   snow: palette.gray[1],
-  white: '#ffffff'
+  white: '#fff'
 }
 
 export const brand = {

@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import * as propTypes from 'prop-types';
 import Waypoint from 'react-waypoint';
 import { Spring, interpolate } from 'react-spring';
-import { TimingAnimation } from 'react-spring/dist/addons';
-class Fade extends React.Component {
+
+export default class Fade extends React.Component<any, any> {
 
   constructor(props) {
     super(props);
     this.state = {
       opacity: 0,
-      y: 10,
+      y: 16,
     };
   }
 
@@ -27,9 +27,8 @@ class Fade extends React.Component {
 
     return (
       <Spring
-        from={{ opacity: 0, y: 10 }}
+        from={{ opacity: 0, y: 16 }}
         to={{ opacity, y }}
-        impl={TimingAnimation}
         config={{ duration: 400 }}
       >
         {({ opacity, y }) =>
@@ -37,7 +36,7 @@ class Fade extends React.Component {
             opacity,
             transform: `translate(0px, ${y}px)`,
           }}>
-            <Waypoint onEnter={this.handleSpringEnter} bottomOffset={100}></Waypoint>
+            <Waypoint onEnter={this.handleSpringEnter} bottomOffset={120}></Waypoint>
             {children}
           </div>
         }
@@ -45,9 +44,3 @@ class Fade extends React.Component {
     );
   }
 }
-
-Fade.propTypes = {
-
-};
-
-export default Fade;

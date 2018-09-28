@@ -6,11 +6,6 @@ export const AppStyled = styled.div`
     box-sizing: border-box;
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
   button {
     display: inline-block;
     font-weight: 400;

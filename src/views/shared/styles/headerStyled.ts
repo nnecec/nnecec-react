@@ -14,25 +14,9 @@ export const FooterStyled = styled.footer`
   }
 `
 
-export const FooterVersionStyled = styled.div`
-  position: relative;
-
-  .bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 120%;
-    height: 26px;
-    background-color: ${theme.colors.primary};
-    transform-origin: 0 0;
-  }
-
-  .version {
-    font-weight: 500;
-    color: ${theme.colors.primary};
-    position: relative;
-    padding: 4px;
-  }
+export const FooterVersionStyled = styled.span`
+  font-weight: 500;
+  color: ${theme.colors.primary};
 `
 
 export const FooterSloganStyled = styled.span`

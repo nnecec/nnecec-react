@@ -12,17 +12,22 @@
     ],
     "sourceMap": true,
     "experimentalDecorators": true,
-    "include": [
-      "src/**/*"
-    ],
-    "exclude": [
-      ".git",
-      "node_modules"
-    ],
     "plugins": [
       {
         "name": "typescript-styled-plugin"
       }
-    ]
-  }
+    ],
+    "paths": {
+      "components/*": [
+        "src/components/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    ".git",
+    "node_modules"
+  ]
 }
