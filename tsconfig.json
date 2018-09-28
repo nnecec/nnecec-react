@@ -17,17 +17,18 @@
         "name": "typescript-styled-plugin"
       }
     ],
+    "baseUrl": "src",
     "paths": {
       "components/*": [
-        "src/components/*"
+        "components/*"
       ]
-    }
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    ".git",
-    "node_modules"
-  ]
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      ".git",
+      "node_modules"
+    ]
+  }
 }
