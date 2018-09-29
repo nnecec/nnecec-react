@@ -1,28 +1,18 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
     "moduleResolution": "node",
-    "strict": true,
+    "strictNullChecks": true,
     "declaration": false,
-    "jsx": "react",
+    "jsx": "preserve",
     "lib": [
-      "es2017",
-      "dom"
+      "dom",
+      "es7"
     ],
-    "sourceMap": true,
     "experimentalDecorators": true,
-    "plugins": [
-      {
-        "name": "typescript-styled-plugin"
-      }
-    ],
-    "baseUrl": "src",
-    "paths": {
-      "components/*": [
-        "components/*"
-      ]
-    },
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
     "include": [
       "src/**/*"
     ],

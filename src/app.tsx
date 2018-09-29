@@ -17,13 +17,12 @@ const stores = {
   ...store,
 };
 
-class App extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  public render() {
-
+  render() {
     return (
       <Provider {...stores}>
         <BrowserRouter>
@@ -34,4 +33,3 @@ class App extends React.Component {
   }
 }
 
-export default App;
