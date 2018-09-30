@@ -1,8 +1,6 @@
 import * as React from 'react';
-import styled from 'styled-components';
-import * as propTypes from 'prop-types';
 import Waypoint from 'react-waypoint';
-import { Spring, interpolate } from 'react-spring';
+import { Spring } from 'react-spring';
 
 export default class Fade extends React.Component<any, any> {
 
@@ -10,7 +8,7 @@ export default class Fade extends React.Component<any, any> {
     super(props);
     this.state = {
       opacity: 0,
-      y: 16,
+      y: 40,
     };
   }
 
@@ -27,9 +25,8 @@ export default class Fade extends React.Component<any, any> {
 
     return (
       <Spring
-        from={{ opacity: 0, y: 16 }}
+        from={{ opacity: 0, y: 40 }}
         to={{ opacity, y }}
-        config={{ duration: 400 }}
       >
         {({ opacity, y }) =>
           <div style={{

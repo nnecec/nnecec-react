@@ -9,11 +9,7 @@
 
 /* components */
 
-@import './components/browser.css';
-@import './components/header.css';
 @import './components/home.css';
-@import './components/case.css';
-
 
 /*  */
 

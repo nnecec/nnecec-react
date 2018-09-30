@@ -1,5 +1,14 @@
 import styled from 'styled-components'
 import theme from 'styles/theme'
+import { ContainerStyled } from 'styles/common'
+
+export const RepositoryStyled = styled.div`
+  /* background-repeat: no-repeat;
+  background-image: url("//oe2c4fczn.bkt.clouddn.com/unsplash-fuse-brussels-white.jpg");
+  background-size: 60% auto;
+  background-position: bottom center;
+  padding-bottom: 200px; */
+`
 
 export const CaseTitleStyled = styled.h1`
   font-size: 18px;
@@ -29,4 +38,8 @@ export const CaseRepoStyled = styled.div`
       margin-right: 10px;
     }
   }
+`
+
+export const EndStyled = styled(ContainerStyled)`
+  text-align: center;
 `

@@ -12,6 +12,9 @@ import Home from './home';
 import Case from './case/case';
 import Resume from './resume/resume';
 
+// 首屏加载
+import Loader from './shared/loader'
+
 import '../styles/app.css';
 import { AppStyled } from '../styles/app';
 
@@ -53,6 +56,8 @@ class Root extends React.Component<any, any> {
         <IntlProvider locale={appLocale.locale}
           messages={appLocale.messages}
           formats={appLocale.formats}>
+
+          {/* <Loader></Loader> */}
 
           <div className="viewport font-hei">
             <Header></Header>

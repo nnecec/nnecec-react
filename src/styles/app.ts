@@ -15,7 +15,7 @@ export const AppStyled = styled.div`
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
-    padding: 0 6px;
+    padding: 2px 6px;
     font-size: 12px;
     border-radius: 4px;
     user-select: none;
@@ -69,7 +69,5 @@ export const AppStyled = styled.div`
       }
     }
   }
-
-  
 }
 `

@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
 import { Trail, config, animated } from 'react-spring'
 
+
+import { HeaderStyled, HeaderBackgroundStyled, HeaderWrapStyled, HeaderNavStyled } from './styles/headerStyled'
+import Logo from './logo'
 import AdvancedStorage from '../../utils/advancedStorage'
 
 
@@ -28,34 +31,28 @@ class Header extends React.Component {
   render() {
 
     const navItems = [
-      <li>
-        <Link to="/">
-          <FormattedMessage
-            tagName="span"
-            id="header.nav.home"
-            defaultMessage="Home"
-          />
-        </Link>
-      </li>,
-      <li>
-        <Link to="/case">
-          <FormattedMessage
-            tagName="span"
-            id="header.nav.case"
-            defaultMessage="Case"
-          />
-        </Link>
-      </li>,
-      <li>
-        <Link to="/about">
-          <FormattedMessage
-            tagName="span"
-            id="header.nav.about"
-            defaultMessage="About"
-          />
-        </Link>
-      </li>,
-      <li>
+      <Link to="/">
+        <FormattedMessage
+          tagName="span"
+          id="header.nav.home"
+          defaultMessage="Home"
+        />
+      </Link>,
+      <Link to="/case">
+        <FormattedMessage
+          tagName="span"
+          id="header.nav.case"
+          defaultMessage="Case"
+        />
+      </Link>,
+      <Link to="/about">
+        <FormattedMessage
+          tagName="span"
+          id="header.nav.about"
+          defaultMessage="About"
+        />
+      </Link>,
+      <React.Fragment>
         {
           this.props.commonStore.locale === 'en-US' &&
           <button onClick={() => this.setLocale('zh-CN')}>中</button>
@@ -64,18 +61,17 @@ class Header extends React.Component {
           this.props.commonStore.locale === 'zh-CN' &&
           <button onClick={() => this.setLocale('en-US')}>En</button>
         }
-      </li>
+      </React.Fragment>
     ]
 
     return (
-      <header className="ec-header">
-        <div className="header-background"></div>
-        <div className="container">
+      <HeaderStyled>
+        <HeaderBackgroundStyled />
+        <HeaderWrapStyled>
           <nav className="ec-header-logo">
-            <Link to="/" target="_self">nnecec</Link>
+            <Link to="/" target="_self"><Logo width={24} fill={'#bbb'} /></Link>
           </nav>
-          <nav className="ec-header-menu">
-
+          <HeaderNavStyled>
             <ul>
               <Trail
                 from={{ opacity: 0, transform: 'translateY(-12px)' }}
@@ -83,19 +79,19 @@ class Header extends React.Component {
                 keys={navItems.map((_, i) => i)}
               >
                 {navItems.map(item => ({ opacity, transform }) => (
-                  <animated.div
+                  <animated.li
                     style={{
                       opacity,
                       transform
                     }}
-                  >{item}</animated.div>
+                  >{item}</animated.li>
                 ))}
               </Trail>
 
             </ul>
-          </nav>
-        </div>
-      </header>
+          </HeaderNavStyled>
+        </HeaderWrapStyled>
+      </HeaderStyled>
     )
   }
 }

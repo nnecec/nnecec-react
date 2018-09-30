@@ -1,32 +1,33 @@
-import * as React from 'react';
-import { inject, observer } from 'mobx-react';
-import { FormattedDate, defineMessages } from 'react-intl';
+import * as React from 'react'
+import { inject, observer } from 'mobx-react'
 
-import Repositories from './repositories';
+import Intro from './intro'
+import Repositories from './repositories'
+import End from './end'
+
 @inject('commonStore')
 @observer
-class Case extends React.Component {
+export default class Case extends React.Component {
 
   constructor(props) {
     super(props);
   }
 
   componentWillMount() {
-    
+
   }
 
   render() {
     return (
       <div className="case">
 
-        <div style={{
-          height: `${this.props.commonStore.viewHeight}px`,
-          backgroundColor: '#ddd',
-        }}></div>
+        <Intro height={this.props.commonStore.viewHeight} />
+
         <Repositories />
+
+        <End />
       </div>
     );
   }
 }
 
-export default Case;

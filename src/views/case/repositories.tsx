@@ -4,8 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { Tag, Fade } from 'components';
 
-import { CaseTitleStyled, CaseRepoStyled } from './styles/caseStyled'
-import { ReadStyled } from 'styles/text'
+import { RepositoryStyled, CaseTitleStyled, CaseRepoStyled } from './styles/caseStyled'
 
 const dwdPNG = require('../../assets/dwd.png')
 const mlabPNG = require('../../assets/mlab.png')
@@ -22,7 +21,7 @@ export default class Repositories extends React.Component {
 
   render() {
     return (
-      <div className="repositories">
+      <RepositoryStyled>
         <div className="container work">
           <Grid>
             <Row>
@@ -220,7 +219,7 @@ export default class Repositories extends React.Component {
             </Row>
           </Grid>
         </div>
-      </div>
+      </RepositoryStyled>
     );
   }
 }
