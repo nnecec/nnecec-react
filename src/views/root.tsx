@@ -57,9 +57,11 @@ class Root extends React.Component<any, any> {
           messages={appLocale.messages}
           formats={appLocale.formats}>
 
-          {/* <Loader></Loader> */}
 
           <div className="viewport font-hei">
+
+            <Loader></Loader>
+
             <Header></Header>
             <Switch>
               <Route exact path="/" component={Home} />

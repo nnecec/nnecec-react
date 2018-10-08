@@ -1997,6 +1997,11 @@ defined@^1.0.0:
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
   integrity sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=
 
+delay@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/delay/-/delay-4.0.1.tgz#052120e49bc3617a92e9a6cd9556be2cf23397a0"
+  integrity sha512-wOsrzqdl8Lphi0v3g4FPz7zf0sT4o/u+z+LB+s1q0qzB9xw6QzZbdY9D6IoCojRHIxbaHvpUkLt6//1KB6VNug==
+
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
