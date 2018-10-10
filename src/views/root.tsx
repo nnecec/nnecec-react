@@ -48,7 +48,7 @@ class Root extends React.Component<any, any> {
 
 
   public render() {
-    const lang = this.props.commonStore.locale;
+    const { lang, isLoader } = this.props.commonStore
     const appLocale = this.getLocale(lang);
 
     return (
@@ -57,19 +57,20 @@ class Root extends React.Component<any, any> {
           messages={appLocale.messages}
           formats={appLocale.formats}>
 
-
           <div className="viewport font-hei">
+            {
+              !isLoader && <Loader />
+            }
+            <React.Fragment>
+              <Header></Header>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/case" component={Case} />
+                <Route path="/about" component={Resume} />
+              </Switch>
 
-            <Loader></Loader>
-
-            <Header></Header>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/case" component={Case} />
-              <Route path="/about" component={Resume} />
-            </Switch>
-
-            <Footer></Footer>
+              <Footer></Footer>
+            </React.Fragment> :
           </div>
         </IntlProvider>
       </AppStyled>

@@ -1,25 +1,26 @@
-import * as React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import * as React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import "regenerator-runtime/runtime"
 
 // mobx
-import createBrowserHistory from 'history/createBrowserHistory';
-import { Provider } from 'mobx-react';
-import { RouterStore, syncHistoryWithStore } from 'mobx-react-router';
-import store from './store';
+import createBrowserHistory from 'history/createBrowserHistory'
+import { Provider } from 'mobx-react'
+import { RouterStore, syncHistoryWithStore } from 'mobx-react-router'
+import store from './store'
 
-import Root from './views/root';
+import Root from './views/root'
 
-const browserHistory = createBrowserHistory();
-const routingStore = new RouterStore();
+const browserHistory = createBrowserHistory()
+const routingStore = new RouterStore()
 const stores = {
   // Key can be whatever you want
   routing: routingStore,
   ...store,
-};
+}
 
 export default class App extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -29,7 +30,7 @@ export default class App extends React.Component {
           <Root></Root>
         </BrowserRouter>
       </Provider>
-    );
+    )
   }
 }
 

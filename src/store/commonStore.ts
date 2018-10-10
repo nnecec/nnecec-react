@@ -5,6 +5,7 @@ export class CommonStore {
 
   @observable viewHeight: any;
   @observable locale: string;
+  @observable isLoader: boolean = false;
 
   constructor() {
     this.storage = new AdvancedStorage('lang');
@@ -19,6 +20,11 @@ export class CommonStore {
   @action
   setLocale = (lang: string) => {
     this.locale = lang;
+  }
+
+  @action
+  setLoader = () => {
+    this.isLoader = true
   }
 }
 

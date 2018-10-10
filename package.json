@@ -22,7 +22,6 @@
     "mobx-react-router": "^4.0.5",
     "normalize.css": "^8.0.0",
     "palx": "^1.0.3",
-    "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-flexbox-grid": "^2.1.2",
@@ -31,6 +30,7 @@
     "react-router-dom": "^4.3.1",
     "react-spring": "^5.9.2",
     "react-waypoint": "^8.0.3",
+    "regenerator-runtime": "^0.12.1",
     "styled-components": "^3.4.9"
   },
   "devDependencies": {
