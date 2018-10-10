@@ -36,20 +36,13 @@ class Root extends React.Component<any, any> {
 
   getLocale = (lang: string = 'zh-CN') => {
     const result: any = locale[lang.toLowerCase()];
-
     addLocaleData(result.data);
-
     return result.default || result;
   }
 
-  handlePositionChange = (e) => {
-    console.log(e)
-  }
-
-
   public render() {
-    const { lang, isLoader } = this.props.commonStore
-    const appLocale = this.getLocale(lang);
+    const { locale, isLoader } = this.props.commonStore
+    const appLocale = this.getLocale(locale);
 
     return (
       <AppStyled>

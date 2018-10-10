@@ -13,7 +13,7 @@ import AdvancedStorage from '../../utils/advancedStorage'
 
 @inject('commonStore')
 @observer
-class Header extends React.Component {
+export default class Header extends React.Component {
   storage: AdvancedStorage
 
   constructor(props: React.ReactPropTypes) {
@@ -24,7 +24,6 @@ class Header extends React.Component {
   setLocale = (lang) => {
     this.props.commonStore.setLocale(lang)
     this.storage.setLocal(lang)
-    this.forceUpdate()
   }
 
 
@@ -95,5 +94,3 @@ class Header extends React.Component {
     )
   }
 }
-
-export default Header
