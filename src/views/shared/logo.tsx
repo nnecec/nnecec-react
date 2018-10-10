@@ -36,7 +36,7 @@ export default class Logo extends React.Component<LogoProps, any> {
         onPointerLeave={() => this.handlePointerEnter(false)}
       >
         <Spring from={{ fill: theme.colors.silver }} to={{ fill: hover ? theme.colors.primary : theme.colors.silver }}>
-          {({ fill }) => <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 600 600" width={width} height={height || width} fill={fill}>
+          {({ fill }) => <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 600 600" width={width} height={width} fill={fill}>
             <g>
               <rect x="75.5" y="49.5" width="199" height="499" />
               <path d="M274,50v498H76V50H274 M275,49H75v500h200V49L275,49z" />
