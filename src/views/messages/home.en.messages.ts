@@ -3,7 +3,7 @@ export default {
   'header.nav.case': 'Case',
   'header.nav.about': 'About',
 
-  'home.me.intro': 'Hello,</br></br>' +
+  'home.me.intro': 'Hello 👋,</br></br>' +
     'I\'m Shi Cheng, a front-end developer.</br>' +
     'This\'s my personal website, there is some introduction of mine and my resume.</br>' +
     'You can contact me by email: <a href="mailto:nnecec@outlook.com">nnecec@outlook.com</a>',
@@ -13,5 +13,5 @@ export default {
     'My career goal is to be an excellent engineer in the industry.</br></br>' +
     'Outside of work, I may be watching movies, cooking, playing League of Legends, reading books and so on.</br>',
 
-  'home.me.projects': 'View my projects. ◊',
+  'home.me.projects': 'View my projects. ✌️',
 };
