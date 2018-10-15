@@ -1,12 +1,6 @@
 @import './extension.css';
 @import './common.css';
 
-/* variable */
-
-@import './variable/color.css';
-@import './variable/z-index.css';
-
-
 /* components */
 
 @import './components/home.css';

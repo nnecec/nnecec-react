@@ -18,7 +18,7 @@ export default class Intro extends React.Component {
         <Row>
           <Col md={8}></Col>
           <Col md={4}>
-          
+
           </Col>
 
         </Row>
