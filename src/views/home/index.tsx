@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
+
+import { IntroStyled } from './styles/homeStyled'
 import Me from './me';
 
 @inject('commonStore')
@@ -14,15 +16,14 @@ class Home extends React.Component {
     const height = commonStore.viewHeight;
     return (
       <div className="home">
-        <section className="home-section logo" style={{ height }}>
-        </section>
+        <IntroStyled style={{ height }} />
         <section className="home-section me">
           <div className="container">
             <Me></Me>
           </div>
         </section>
         <section className="home-section case">
-          
+
         </section>
       </div>
     );

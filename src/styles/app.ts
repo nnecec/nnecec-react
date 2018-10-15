@@ -4,6 +4,7 @@ import theme from './theme'
 export const AppStyled = styled.div`
   * {
     box-sizing: border-box;
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   }
 
   button {
@@ -68,6 +69,11 @@ export const AppStyled = styled.div`
         }
       }
     }
+  }
+
+  figure {
+    margin: 0;
+    width: 100%;
   }
 }
 `
