@@ -1,9 +1,0 @@
-{
-  "modules": false,
-  "plugins": {
-    "postcss-cssnext":{},
-    "cssnano":{},
-    "postcss-color-function":{},
-    "postcss-custom-properties":{}
-  }
-}
