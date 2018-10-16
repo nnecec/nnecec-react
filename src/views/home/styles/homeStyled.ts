@@ -10,3 +10,10 @@ export const IntroStyled = styled.section`
   background-size: cover;
   background-position: center center;
 `
+
+export const MeStyled = styled.section`
+  padding: 160px 0;
+  color: ${theme.colors.slate};
+  line-height: 1.5;
+  font-size: 14px;
+`

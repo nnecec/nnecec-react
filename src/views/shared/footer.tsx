@@ -14,9 +14,9 @@ const instagramSVG = require('../../assets/instagram.svg')
 
 
 const Version = Keyframes.Spring({
-  peek: [{ to: { transform: `scale(${1}, ${1})`, color: '#fff', opacity: 1, x: 0 } }, { to: { transform: `scale(${0}, ${1})`, color: theme.colors.primary, opacity: 0, x: -20 } }],
-  show: [{ to: { transform: `scale(${1}, ${1})`, color: '#fff', opacity: 1, x: 0 } }, { to: { transform: `scale(${1}, ${1.2})` } }],
-  hide: [{ to: { transform: `scale(${1}, ${1})` } }, { to: { transform: `scale(${0}, ${1})`, color: theme.colors.primary, opacity: 0, x: -20 } }],
+  peek: [{ to: { transform: `scale(${1}, 1)`, color: '#fff', opacity: 1, x: 0 } }, { to: { transform: `scale(${0}, 1)`, color: theme.colors.primary, opacity: 0, x: -20 } }],
+  show: [{ to: { transform: `scale(${1}, 1)`, color: '#fff', opacity: 1, x: 0 } }, { to: { transform: `scale(${1}, 1)` } }],
+  hide: [{ to: { transform: `scale(${1}, 1)` } }, { to: { transform: `scale(${0}, 1)`, color: theme.colors.primary, opacity: 0, x: -20 } }],
 })
 
 export default class Footer extends React.Component<any, any> {

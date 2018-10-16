@@ -18,7 +18,7 @@ class Me extends React.Component {
 
   render() {
     return (
-      <div className="me read">
+      <div className="container">
         <div className="intro">
           <Fade>
             <FormattedHTMLMessage
