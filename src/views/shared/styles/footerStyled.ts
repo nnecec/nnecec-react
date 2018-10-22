@@ -32,6 +32,7 @@ export const FooterVersionStyled = styled.div`
     color: ${theme.colors.primary};
     position: relative;
     padding: 4px;
+    cursor: default;
   }
 `
 
