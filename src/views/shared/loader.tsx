@@ -22,7 +22,6 @@ export default class Loader extends React.Component<any, any> {
     const { width = 100, height = 100 } = this.props
     const { state } = this.state
 
-    console.log(state)
 
     const Background = Keyframes.Trail({
       peek: [{ y: 0 }],
