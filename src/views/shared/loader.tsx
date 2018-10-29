@@ -22,34 +22,37 @@ export default class Loader extends React.Component<any, any> {
     const { width = 100, height = 100 } = this.props
     const { state } = this.state
 
+    console.log(state)
+
     const Background = Keyframes.Trail({
-      peek: { to: { y: 0 } },
-      show: { to: { y: 0 } },
-      hide: async call => {
-        await call({ from: { y: 0 }, to: { y: 100 } })
+      peek: [{ y: 0 }],
+      show: [{ y: 0 }],
+      hide: async (next: Function) => {
+        await next({ y: 100, from: { y: 0 } })
         this.props.commonStore.setLoader();
       },
     })
 
     const Word = Keyframes.Trail({
-      peek: { to: { y: 80 } },
-      show: async call => {
-        await call({ from: { y: 80 }, to: { y: 0 } })
+      peek: [{ y: 80 }],
+      show: async (next: Function) => {
+        await next({ y: 0, from: { y: 80 } })
+        await delay(1000)
         this.setState({ state: 'hide' })
       },
-      hide: async call => {
-        await call({ from: { y: 0 }, to: { y: 80 } })
+      hide: async (next: Function) => {
+        await next({ y: 80 })
       }
     })
 
-    const items = ['nnecec', 'Frontend', 'Go LPL']
+    const items = ['nnecec', 'Frontend', 'IG for Win!']
     const bgs = [1, 2, 3, 4]
     return (
       <LoaderStyled>
         <BackgroundWrapStyled>
-          <Background state={state} keys={bgs}>
+          <Background state={state} keys={bgs} items={bgs}>
             {
-              bgs.map(bg => styles =>
+              (bg, i) => (styles) => (
                 <animated.div style={{
                   transform: `translate(0, ${styles.y}%)`,
                   width: '25%',
@@ -64,8 +67,8 @@ export default class Loader extends React.Component<any, any> {
 
 
         <ItemWrapStyled>
-          <Word state={state} keys={items}>
-            {items.map(item => styles =>
+          <Word state={state} keys={items} items={items}>
+            {(item, i) => styles => (
               <ItemStyled style={{
                 transform: `translateY(${styles.y}px)`
               }}>{item} /</ItemStyled>

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { Link } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
-import { Trail, config, animated } from 'react-spring'
+import { Trail, animated } from 'react-spring'
 
 
 import { HeaderStyled, HeaderBackgroundStyled, HeaderWrapStyled, HeaderNavStyled } from './styles/headerStyled'
@@ -73,18 +73,19 @@ export default class Header extends React.Component {
           <HeaderNavStyled>
             <ul>
               <Trail
+                items={navItems}
+                keys={navItems.map((_, i) => i)}
                 from={{ opacity: 0, transform: 'translateY(-12px)' }}
                 to={{ opacity: 1, transform: 'translateY(0)' }}
-                keys={navItems.map((_, i) => i)}
               >
-                {navItems.map(item => ({ opacity, transform }) => (
+                {item => ({ opacity, transform }) => (
                   <animated.li
                     style={{
                       opacity,
                       transform
                     }}
                   >{item}</animated.li>
-                ))}
+                )}
               </Trail>
 
             </ul>

@@ -1,25 +1,25 @@
-import { observable, action, reaction } from 'mobx';
-import AdvancedStorage from '../utils/advancedStorage';
+import { observable, action, reaction } from 'mobx'
+import AdvancedStorage from '../utils/advancedStorage'
 export class CommonStore {
-  storage: AdvancedStorage;
+  storage: AdvancedStorage
 
-  @observable viewHeight: any;
-  @observable locale: string;
-  @observable isLoader: boolean = false;
+  @observable viewHeight: any
+  @observable locale: string
+  @observable isLoader: boolean = false
 
   constructor() {
-    this.storage = new AdvancedStorage('lang');
-    this.locale = this.storage.getLocal() || navigator.language || 'en-US';
+    this.storage = new AdvancedStorage('lang')
+    this.locale = this.storage.getLocal() || navigator.language || 'en-US'
   }
 
   @action
   setViewHeight = (height: number) => {
-    this.viewHeight = height;
+    this.viewHeight = height
   }
 
   @action
   setLocale = (lang: string) => {
-    this.locale = lang;
+    this.locale = lang
   }
 
   @action
@@ -28,4 +28,4 @@ export class CommonStore {
   }
 }
 
-export default new CommonStore();
+export default new CommonStore()

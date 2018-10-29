@@ -44,6 +44,7 @@ class Root extends React.Component<any, any> {
     const { locale, isLoader } = this.props.commonStore
     const appLocale = this.getLocale(locale);
 
+    console.log(isLoader)
     return (
       <AppStyled>
         <IntlProvider locale={appLocale.locale}
