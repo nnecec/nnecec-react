@@ -36,7 +36,7 @@ export default class Loader extends React.Component<any, any> {
       peek: [{ y: 80 }],
       show: async (next: Function) => {
         await next({ y: 0, from: { y: 80 } })
-        await delay(1000)
+        await delay(2000)
         this.setState({ state: 'hide' })
       },
       hide: async (next: Function) => {
@@ -44,7 +44,7 @@ export default class Loader extends React.Component<any, any> {
       }
     })
 
-    const items = ['nnecec', 'Frontend', 'IG for Win!']
+    const items = ['s', 'h', 'i', ' ', 'c', 'h', 'e', 'n', 'g']
     const bgs = [1, 2, 3, 4]
     return (
       <LoaderStyled>
@@ -70,7 +70,7 @@ export default class Loader extends React.Component<any, any> {
             {(item, i) => styles => (
               <ItemStyled style={{
                 transform: `translateY(${styles.y}px)`
-              }}>{item} /</ItemStyled>
+              }}>{item}</ItemStyled>
             )}
           </Word>
         </ItemWrapStyled>

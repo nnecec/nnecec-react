@@ -1,4 +1,4 @@
-import * as palx from 'palx'
+import palx from 'palx'
 
 const primary = '06f'
 export const palette = palx(primary)
