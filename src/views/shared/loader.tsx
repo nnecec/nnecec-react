@@ -66,7 +66,7 @@ export default class Loader extends React.Component<any, any> {
 
 
         <ItemWrapStyled>
-          <Word state={state} keys={items} items={items}>
+          <Word state={state} keys={items.map((_, i) => i)} items={items}>
             {(item, i) => styles => (
               <ItemStyled style={{
                 transform: `translateY(${styles.y}px)`

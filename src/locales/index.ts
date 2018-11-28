@@ -1,5 +1,5 @@
-import * as localeDataEn from 'react-intl/locale-data/en';
-import * as localeDataZh from 'react-intl/locale-data/zh';
+import localeDataEn from 'react-intl/locale-data/en';
+import localeDataZh from 'react-intl/locale-data/zh';
 
 // common messages
 import messagesZh from './zh-Hans.messages';
