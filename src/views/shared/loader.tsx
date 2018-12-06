@@ -3,7 +3,7 @@ import { inject, observer } from 'mobx-react'
 import { Spring, Trail, Keyframes, animated } from 'react-spring'
 import delay from 'delay'
 
-import { LoaderStyled, ItemWrapStyled, ItemStyled, BackgroundWrapStyled } from './styles/LoaderStyled'
+import { LoaderStyled, ItemWrapStyled, ItemStyled, BackgroundWrapStyled, BackgroundStyled } from './styles/LoaderStyled'
 
 @inject('commonStore')
 export default class Loader extends React.Component<any, any> {
@@ -52,13 +52,9 @@ export default class Loader extends React.Component<any, any> {
           <Background state={state} keys={bgs} items={bgs}>
             {
               (bg, i) => (styles) => (
-                <animated.div style={{
+                <BackgroundStyled style={{
                   transform: `translate(0, ${styles.y}%)`,
-                  width: '25%',
-                  height: '100%',
-                  backgroundColor: '#000',
-                  display: 'inline-block'
-                }}>{bg}</animated.div>
+                }} />
               )
             }
           </Background>

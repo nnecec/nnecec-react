@@ -24,12 +24,12 @@ export const BackgroundWrapStyled = styled.div`
 export const BackgroundStyled = styled.div`
   width: 25%;
   height: 100%;
-  background-color: #000;
+  background-color: ${theme.colors.dark};
   display: inline-block;
 `
 
 export const ItemWrapStyled = styled.div`
-  color: ${theme.colors.snow};
+  color: ${theme.colors.smoke};
   overflow: hidden;
 `
 

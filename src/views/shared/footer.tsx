@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl'
 import { Spring, Keyframes } from 'react-spring'
 
 import { FooterStyled, FooterVersionStyled, FooterSloganStyled, FooterIconStyled } from './styles/footerStyled'
-import theme from 'styles/theme'
+import theme, { themeName } from 'styles/theme'
 
 const pkg = require('../../../package.json')
 
@@ -44,7 +44,7 @@ export default class Footer extends React.Component<any, any> {
               {styles =>
                 <React.Fragment>
                   <div className="bg" style={styles}></div>
-                  <div className="version" style={{ color: styles.color }}>Blue
+                  <div className="version" style={{ color: styles.color }}>{themeName}
                     <span style={{ opacity: styles.opacity, transform: `translateX(${styles.x}px)` }}> {pkg.version}</span>
                   </div>
                 </React.Fragment>
