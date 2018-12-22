@@ -12,15 +12,15 @@ export const HeaderStyled = styled.header`
 `
 
 export const HeaderBackgroundStyled = styled.div`
-  backdrop-filter: saturate(180%) blur(20px);
+  /* backdrop-filter: saturate(180%) blur(20px);
   transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-  transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: background-color, backdrop-filter, -webkit-backdrop-filter; */
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255,255,255,0.7);
+  /* background-color: rgba(255,255,255,0.7); */
 `
 
 export const HeaderWrapStyled = styled(ContainerStyled)`

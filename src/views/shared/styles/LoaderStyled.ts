@@ -22,7 +22,7 @@ export const BackgroundWrapStyled = styled.div`
 `
 
 export const BackgroundStyled = styled.div`
-  width: 25%;
+  width: ${100 / 5}%;
   height: 100%;
   background-color: ${theme.colors.dark};
   display: inline-block;

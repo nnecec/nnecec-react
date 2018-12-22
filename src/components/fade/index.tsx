@@ -12,6 +12,10 @@ export default class Fade extends React.Component<any, any> {
     };
   }
 
+  componentDidMount() {
+    
+  }
+
   handleSpringEnter = () => {
     this.setState({
       opacity: 1,
@@ -33,7 +37,7 @@ export default class Fade extends React.Component<any, any> {
             opacity,
             transform: `translate(0px, ${y}px)`,
           }}>
-            <Waypoint onEnter={this.handleSpringEnter} bottomOffset={120}></Waypoint>
+            <Waypoint onEnter={this.handleSpringEnter} bottomOffset={80}></Waypoint>
             {children}
           </div>
         }

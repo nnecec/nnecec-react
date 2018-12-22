@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { EndStyled } from './styles/caseStyled'
+const endJPG = require('../../assets/fuse-brussels-white.jpg')
 
 export default class End extends React.Component {
 
@@ -10,9 +11,7 @@ export default class End extends React.Component {
 
   render() {
     return (<EndStyled>
-
-      <img src="//oe2c4fczn.bkt.clouddn.com/unsplash-fuse-brussels-white.jpg" alt="" width="80%" />
-
+      <img src={endJPG} alt="" width="60%" />
     </EndStyled >)
   }
 }

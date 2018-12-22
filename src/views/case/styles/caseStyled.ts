@@ -42,4 +42,7 @@ export const CaseRepoStyled = styled.div`
 
 export const EndStyled = styled(ContainerStyled)`
   text-align: center;
+  img {
+    vertical-align: bottom;
+  }
 `
