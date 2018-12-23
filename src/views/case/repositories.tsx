@@ -29,7 +29,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseTitleStyled>
                     <FormattedMessage
-                      tagName="p"
+                      tagName="span"
                       id="repository.work"
                     />
                   </CaseTitleStyled>
@@ -41,7 +41,7 @@ export default class Repositories extends React.Component {
                   <CaseRepoStyled>
                     <img src={dwdPNG} alt="" width="100%" />
 
-                    <h3>admin.dianwoda</h3>
+                    <h2>admin.dianwoda</h2>
                     <FormattedHTMLMessage
                       tagName="p"
                       id="repository.dianwoda.desc"
@@ -58,7 +58,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseRepoStyled>
                     <img src={mlabPNG} alt="" width="100%" />
-                    <h3>malianghang.com</h3>
+                    <h2>malianghang.com</h2>
                     <FormattedHTMLMessage
                       tagName="p"
                       id="repository.malianghang.desc"
@@ -85,7 +85,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseTitleStyled>
                     <FormattedMessage
-                      tagName="p"
+                      tagName="span"
                       id="repository.personal"
                     />
                   </CaseTitleStyled>
@@ -96,7 +96,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseRepoStyled>
                     <a href="https://github.com/nnecec/nnecec-react" target="_blank">
-                      <h3>nnecec-react</h3>
+                      <h2>nnecec-react</h2>
                       <FormattedHTMLMessage
                         tagName="p"
                         id="repository.nnecec-react.desc"
@@ -114,6 +114,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseRepoStyled>
                     <a href="https://github.com/nnecec/ecblog-server" target="_blank">
+                      <h2>ecblog</h2>
                       <h3>ecblog-server</h3>
                       <FormattedHTMLMessage
                         tagName="p"
@@ -150,18 +151,18 @@ export default class Repositories extends React.Component {
                 </Fade>
                 <Fade>
                   <CaseRepoStyled>
-                    <a href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
-                      <h3>ecblog-admin</h3>
+                    <a href="https://github.com/nnecec/arrow" target="_blank">
+                      <h2>Arrow</h2>
                       <FormattedHTMLMessage
                         tagName="p"
-                        id="repository.ecblog-admin.desc"
+                        id="repository.arrow.desc"
                       />
                       <div className="tag">
+                        <Tag title={'React'} />
                         <Tag title={'TypeScript'} />
-                        <Tag title={'Angular'} />
-                        <Tag title={'Apollo'} />
-                        <Tag title={'RxJS'} />
-                        <Tag title={'SCSS'} />
+                        <Tag title={'Less'} />
+                        <Tag title={'Jest'} />
+                        <Tag title={'Rollup'} />
                       </div>
                     </a>
                   </CaseRepoStyled>
@@ -169,7 +170,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseRepoStyled>
                     <a href="https://github.com/nnecec/nnecec-luoo" target="_blank">
-                      <h3>nnecec-luoo</h3>
+                      <h2>nnecec-luoo</h2>
                       <FormattedHTMLMessage
                         tagName="p"
                         id="repository.nnecec-luoo.desc"
@@ -188,7 +189,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseRepoStyled>
                     <a href="https://github.com/nnecec/necook" target="_blank">
-                      <h3>necook</h3>
+                      <h2>necook</h2>
                       <FormattedHTMLMessage
                         tagName="p"
                         id="repository.necook.desc"
@@ -203,7 +204,7 @@ export default class Repositories extends React.Component {
                 <Fade>
                   <CaseRepoStyled>
                     <a href="https://github.com/nnecec/leetec" target="_blank">
-                      <h3>leetec</h3>
+                      <h2>leetec</h2>
                       <FormattedHTMLMessage
                         tagName="p"
                         id="repository.leetec.desc"

@@ -30,7 +30,10 @@ const spanColor = {
   'Node.js': '#026D00',
   AVA: '#0B1749',
   markdown: '#000000',
-  Electron: '#9FEAF9'
+  Electron: '#9FEAF9',
+  Jest: '#99424F',
+  Less: '#1D365D',
+  Rollup: '#EE3234',
 };
 
 const StyledSpan = styled.span`
