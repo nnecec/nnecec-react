@@ -28,13 +28,15 @@ export const CaseRepoStyled = styled.div`
   font-size: 14px;
   margin-bottom: 80px;
 
+  a {
+    color: ${theme.colors.slate};
+  }
   h2{
     font-size: 18px;
   }
   h3 {
     font-size: 16px;
     margin: 0 0 4px 0;
-    color: ${theme.colors.black};
   }
 
   .tag {
