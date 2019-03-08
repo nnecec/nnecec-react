@@ -11,7 +11,7 @@ export default {
   'home.me.description': 'I have been working on front-end development since I graduated in 2015., </br>' +
     'As a developer, I enjoy this career and I hope to develop products that are efficient, practical and beautifully designed.</br>' +
     'My career goal is to be an excellent engineer in the industry.</br></br>' +
-    'Outside of work, I may be watching movies, cooking, playing League of Legends, reading books and so on.</br>',
+    'Outside of work, I like watching movies, cooking, playing League of Legends, reading books and so on.</br>',
 
   'home.me.projects': 'View my projects. ✌️',
 };
