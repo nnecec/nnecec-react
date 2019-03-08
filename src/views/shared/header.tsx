@@ -2,7 +2,7 @@ import * as React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { Link } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
-import { Trail, animated } from 'react-spring'
+import { Trail, animated } from 'react-spring/renderprops'
 
 
 import { HeaderStyled, HeaderBackgroundStyled, HeaderWrapStyled, HeaderNavStyled } from './styles/headerStyled'

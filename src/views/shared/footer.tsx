@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FormattedMessage } from 'react-intl'
-import { Spring, Keyframes } from 'react-spring'
+import { Spring, Keyframes } from 'react-spring/renderprops'
 
 import { FooterStyled, FooterVersionStyled, FooterSloganStyled, FooterIconStyled } from './styles/footerStyled'
 import theme, { themeName } from 'styles/theme'

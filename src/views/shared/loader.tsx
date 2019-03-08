@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { inject } from 'mobx-react'
-import { Keyframes } from 'react-spring'
+import { Keyframes } from 'react-spring/renderprops'
 import delay from 'delay'
 
 import { LoaderStyled, ItemWrapStyled, ItemStyled, BackgroundWrapStyled, BackgroundStyled } from './styles/LoaderStyled'

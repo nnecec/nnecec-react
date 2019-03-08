@@ -49,22 +49,13 @@ interface TagProps {
   title: TitleEnum
 }
 
-interface TagState { }
-
-export default class Tag extends React.Component<TagProps, TagState> {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const { title } = this.props;
-    return (
-      <StyledTag>
-        <StyledSpan title={title}></StyledSpan>
-        {title}
-      </StyledTag>
-    );
-  }
+export default function Tag(props: TagProps) {
+  return (
+    <StyledTag>
+      <StyledSpan title={props.title}></StyledSpan>
+      {props.title}
+    </StyledTag >
+  )
 }
 
 enum TitleEnum {

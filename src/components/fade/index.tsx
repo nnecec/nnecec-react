@@ -1,47 +1,20 @@
 import * as React from 'react';
-import Waypoint from 'react-waypoint';
-import { Spring } from 'react-spring';
+import { Waypoint } from 'react-waypoint';
+import { useSpring, animated } from 'react-spring';
 
-export default class Fade extends React.Component<any, any> {
+const { useState } = React
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      opacity: 0,
-      y: 40,
-    };
-  }
+export default function Fade(props: any) {
+  const [opacity, setOpacity] = useState(0)
+  const [y, setY] = useState(40)
 
-  componentDidMount() {
-    
-  }
-
-  handleSpringEnter = () => {
-    this.setState({
-      opacity: 1,
-      y: 0,
-    });
-  }
-
-  render() {
-    const { children } = this.props;
-    const { opacity, y } = this.state;
-
-    return (
-      <Spring
-        from={{ opacity: 0, y: 40 }}
-        to={{ opacity, y }}
-      >
-        {({ opacity, y }) =>
-          <div style={{
-            opacity,
-            transform: `translate(0px, ${y}px)`,
-          }}>
-            <Waypoint onEnter={this.handleSpringEnter} bottomOffset={80}></Waypoint>
-            {children}
-          </div>
-        }
-      </Spring>
-    );
-  }
+  return (
+    <animated.div style={useSpring({ opacity, transform: `translate(0px, ${y}px)`, from: { opacity: 0, transform: `translate(0px, 40px)` } })}>
+      <Waypoint onEnter={() => {
+        setOpacity(1)
+        setY(0)
+      }} bottomOffset={80}></Waypoint>
+      {props.children}
+    </animated.div>
+  )
 }
