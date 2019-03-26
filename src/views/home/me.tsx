@@ -19,18 +19,18 @@ export default function Me() {
 
       <div className="description">
         <Fade>
-          <FormattedHTMLMessage
-            tagName="p"
-            id="home.me.description"
-          />
-        </Fade>
-        <Fade>
-          <Link to="/case">
-            <FormattedMessage
-              tagName="span"
-              id="home.me.projects"
+          <React.Fragment>
+            <FormattedHTMLMessage
+              tagName="p"
+              id="home.me.description"
             />
-          </Link>
+            <Link to="/case">
+              <FormattedMessage
+                tagName="span"
+                id="home.me.projects"
+              />
+            </Link>
+          </React.Fragment>
         </Fade>
       </div>
     </div>

@@ -1,8 +1,10 @@
 import palx from 'palx'
 
 export const themeName = 'Living Coral'
-const primary = 'FA7268'
+// const primary = 'FA7268'
+const primary = '02345A'
 export const palette = palx(primary)
+
 
 export const grays = {
   darker: '#121217',

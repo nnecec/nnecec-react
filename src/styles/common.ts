@@ -11,4 +11,5 @@ export const ContainerStyled = styled.div`
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
+  background-color: ${theme.colors.black}
 `
