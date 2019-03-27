@@ -13,12 +13,20 @@
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
-    "include": [
-      "src/**/*"
-    ],
-    "exclude": [
-      ".git",
-      "node_modules"
-    ]
+    "baseUrl": "./src",
+    "paths": {
+      "store/*": [
+        "./store/*"
+      ],
+      "components/*": [
+        "./components/*"
+      ],
+      "utils/*": [
+        "./utils/*"
+      ],
+      "styles/*": [
+        "./styles/*"
+      ],
+    }
   }
 }

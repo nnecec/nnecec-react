@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 import theme from './theme'
+import { color } from './common'
 
 export const AppStyled = styled.div`
+  background-color: ${color.bgColor}
+
   * {
     box-sizing: border-box;
     font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
@@ -22,13 +25,13 @@ export const AppStyled = styled.div`
     user-select: none;
     outline: none;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    color: ${theme.colors.black};
-    background-color: ${theme.colors.snow};
-    border-color: ${theme.colors.slate};
+    color: ${color.textColor};
+    background-color: ${color.textColor};
+    border-color: ${color.textColor};
 
     &:hover, &:focus {
-      color: ${theme.colors.primary};
-      border-color: ${theme.colors.primary};
+      color: ${color.primary};
+      border-color: ${color.primary};
     }
   }
 
@@ -37,11 +40,11 @@ export const AppStyled = styled.div`
   }
 
   a {
-    color: ${theme.colors.black};
+    color: ${color.textColor};
     text-decoration: none;
 
     :not([target]) {
-      color: ${theme.colors.primary};
+      color: ${color.textColor};
       display: inline-block;
       position: relative;
       outline: 0;
@@ -54,7 +57,7 @@ export const AppStyled = styled.div`
         left: 0;
         width: 100%;
         height: 1px;
-        background-color: ${theme.colors.primary};
+        background-color: ${color.textColor};
 
         opacity: 0;
         transition: all .3s;
@@ -62,7 +65,9 @@ export const AppStyled = styled.div`
       }
 
       :hover {
+        color: ${color.primary};
         ::before {
+          background-color: ${color.primary};
           border-radius: 3px;
           opacity: 1;
           transform: translateY(0);
@@ -74,6 +79,11 @@ export const AppStyled = styled.div`
   figure {
     margin: 0;
     width: 100%;
+  }
+
+  p{
+    color: ${color.textColor};
+    line-height: 1.5;
   }
 }
 `

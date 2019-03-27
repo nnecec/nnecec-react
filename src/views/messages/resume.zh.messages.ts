@@ -1,5 +1,5 @@
 export default {
-  'resume.name': '侍成',
+  'resume.name': 'nnecec',
   'resume.email': '邮箱',
   'resume.phone': '电话',
 

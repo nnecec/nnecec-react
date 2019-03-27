@@ -4,7 +4,7 @@ export default {
   'header.nav.about': '关于',
 
   'home.me.intro': '你好 👋，</br></br>' +
-    '我是侍成，一个前端开发工程师。</br>' +
+    '我是 nnecec，一个前端开发工程师。</br>' +
     '你可以通过邮箱与我联系: <a href="mailto:nnecec@outlook.com">nnecec@outlook.com</a>',
 
   'home.me.description': '我在2015年毕业后一直从事前端开发的工作。</br>' +

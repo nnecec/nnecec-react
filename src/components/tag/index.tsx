@@ -5,7 +5,6 @@ const StyledTag = styled.div`
   display: inline-block;
   border-radius: 4px;
   font-size: 12px;
-  border: 1px solid #fefefe;
 `;
 
 const spanColor = {

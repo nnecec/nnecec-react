@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import theme from 'styles/theme'
+import { color } from 'styles/common'
 
 export const FooterStyled = styled.footer`
   bottom: 0;
@@ -15,29 +15,11 @@ export const FooterStyled = styled.footer`
 `
 
 export const FooterVersionStyled = styled.div`
-  position: relative;
-
-  .bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 120%;
-    height: 26px;
-    background-color: ${theme.colors.primary};
-    transform-origin: 0 0;
-  }
-
-  .version {
-    font-weight: 500;
-    color: ${theme.colors.primary};
-    position: relative;
-    padding: 4px;
-    cursor: default;
-  }
+  color: ${color.textColor}
 `
 
 export const FooterSloganStyled = styled.span`
-  color: ${theme.colors.silver};
+  color: ${color.textColor};
 `
 
 export const FooterIconStyled = styled.a`

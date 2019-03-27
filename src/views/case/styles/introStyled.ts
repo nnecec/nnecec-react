@@ -10,11 +10,9 @@ export const IntroStyled = styled.div`
 
 export const IntroImageStyled = styled.div`
   height: 100%;
-  background-image: url(${introJPG});
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: ${theme.colors.snow};
   width: 60%;
   display: inline-block;
 
@@ -28,7 +26,7 @@ export const IntroTitleStyled = styled.div`
   width: 40%;
   display: inline-block;
   position: relative;
-  background-color: ${theme.colors.snow};
+  /* background-color: ${theme.colors.snow}; */
 
   @media (max-width: 640px) {
     position: absolute;

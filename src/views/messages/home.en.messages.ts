@@ -4,7 +4,7 @@ export default {
   'header.nav.about': 'About',
 
   'home.me.intro': 'Hello 👋,</br></br>' +
-    'I\'m Shi Cheng, a front-end developer.</br>' +
+    'I\'m nnecec, a front-end developer.</br>' +
     'This\'s my personal website, there is some introduction of mine and my resume.</br>' +
     'You can contact me by email: <a href="mailto:nnecec@outlook.com">nnecec@outlook.com</a>',
 

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useSpring, animated } from 'react-spring'
 
-import theme from 'styles/theme'
+import { color } from 'styles/common'
 
 interface LogoProps {
   width: number, // logo width
@@ -24,7 +24,7 @@ export default function Logo(props: LogoProps) {
     setHover(bool)
   }
 
-  const svgProps = useSpring({ fill: hover ? theme.colors.primary : theme.colors.silver, from: { fill: theme.colors.silver } })
+  const svgProps = useSpring({ fill: hover ? color.primary : color.textColor, from: { fill: color.textColor } })
 
   return (
     <div

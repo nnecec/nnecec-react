@@ -1,14 +1,14 @@
 import palx from 'palx'
+// https://palx.jxnblk.com/
 
-export const themeName = 'Living Coral'
 // const primary = 'FA7268'
 const primary = '02345A'
 export const palette = palx(primary)
 
 
 export const grays = {
-  darker: '#121217',
-  dark: '#17171d',
+  darker: '#121216',
+  dark: '#16161C',
   black: palette.gray[9],
   slate: palette.gray[7],
   silver: palette.gray[5],

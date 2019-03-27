@@ -1,5 +1,5 @@
 export default {
-  'resume.name': 'Shi Cheng',
+  'resume.name': 'nnecec',
   'resume.email': 'E-mail',
   'resume.phone': 'Tel',
 
