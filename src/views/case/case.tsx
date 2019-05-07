@@ -24,8 +24,6 @@ export default class Case extends React.Component {
         <Intro height={this.props.commonStore.viewHeight} />
 
         <Repositories />
-
-        <End />
       </div>
     );
   }
