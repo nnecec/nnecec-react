@@ -19,7 +19,8 @@ const config = {
     extensions: ['.tsx', '.ts', '.js', '.json'],
     alias: {
       "components": resolve(__dirname, '../src/components'),
-      "styles": resolve(__dirname, '../src/styles')
+      "styles": resolve(__dirname, '../src/styles'),
+      "assets": resolve(__dirname, '../src/assets'),
     },
   },
 

@@ -23,5 +23,5 @@ export const FooterSloganStyled = styled.span`
 `
 
 export const FooterIconStyled = styled.a`
-  margin-right: 10px;
+  margin-right: 16px;
 `
