@@ -6,7 +6,7 @@ import { color } from 'styles/common'
 interface LogoProps {
   width: number, // logo width
   height?: number,
-  dontHover: boolean, // disable hover
+  dontHover?: boolean, // disable hover
 }
 
 const { useState } = React

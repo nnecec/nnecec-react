@@ -3,6 +3,7 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import Waypoint from 'react-waypoint'
+import { hot } from 'react-hot-loader/root'
 
 import locale from '../locales';
 
@@ -27,22 +28,22 @@ class Root extends React.Component<any, any> {
 
   }
 
-  componentWillMount() {
-    const { commonStore, history } = this.props;
+  componentWillMount () {
+    const { commonStore, history }=this.props;
     commonStore.setViewHeight(window.innerHeight);
     history.listen(() => window.scrollTo(0, 0));
     // document.body.addEventListener('touchstart', function () { }, true);
   }
 
-  getLocale = (lang: string = 'zh-CN') => {
-    const result: any = locale[lang.toLowerCase()];
+  getLocale=(lang: string='zh-CN') => {
+    const result: any=locale[lang.toLowerCase()];
     addLocaleData(result.data);
-    return result.default || result;
+    return result.default||result;
   }
 
-  public render() {
-    const { locale, isLoader } = this.props.commonStore
-    const appLocale = this.getLocale(locale);
+  public render () {
+    const { locale, isLoader }=this.props.commonStore
+    const appLocale=this.getLocale(locale);
 
     return (
       <AppStyled>
@@ -52,7 +53,7 @@ class Root extends React.Component<any, any> {
 
           <div className="viewport font-hei">
             {
-              !isLoader && <Loader />
+              !isLoader&&<Loader />
             }
             <React.Fragment>
               <Header></Header>
@@ -72,4 +73,4 @@ class Root extends React.Component<any, any> {
   }
 }
 
-export default Root;
+export default hot(Root);

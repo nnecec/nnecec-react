@@ -10,26 +10,29 @@ import Logo from './logo'
 import AdvancedStorage from '../../utils/advancedStorage'
 
 
+interface HeaderProps {
+  commonStore: any
+}
 
 @inject('commonStore')
 @observer
-export default class Header extends React.Component {
+export default class Header extends React.Component<HeaderProps, any> {
   storage: AdvancedStorage
 
-  constructor(props: React.ReactPropTypes) {
+  constructor(props: HeaderProps) {
     super(props)
-    this.storage = new AdvancedStorage('lang')
+    this.storage=new AdvancedStorage('lang')
   }
 
-  setLocale = (lang) => {
+  setLocale=(lang) => {
     this.props.commonStore.setLocale(lang)
     this.storage.setLocal(lang)
   }
 
 
-  render() {
+  render () {
 
-    const navItems = [
+    const navItems=[
       <Link to="/">
         <FormattedMessage
           tagName="span"
@@ -53,11 +56,11 @@ export default class Header extends React.Component {
       </Link>,
       <React.Fragment>
         {
-          this.props.commonStore.locale === 'en-US' &&
+          this.props.commonStore.locale==='en-US'&&
           <button onClick={() => this.setLocale('zh-CN')}>中</button>
         }
         {
-          this.props.commonStore.locale === 'zh-CN' &&
+          this.props.commonStore.locale==='zh-CN'&&
           <button onClick={() => this.setLocale('en-US')}>En</button>
         }
       </React.Fragment>
@@ -68,7 +71,7 @@ export default class Header extends React.Component {
         <HeaderBackgroundStyled />
         <HeaderWrapStyled>
           <nav className="ec-header-logo">
-            <Link to="/" target="_self"><Logo width={24} fill={'#bbb'} /></Link>
+            <Link to="/" target="_self"><Logo width={24} /></Link>
           </nav>
           <HeaderNavStyled>
             <ul>
