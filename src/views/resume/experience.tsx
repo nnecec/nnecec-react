@@ -41,7 +41,7 @@ export default function Basic() {
         </Fade>
 
         <Fade>
-          <Link to="/case">
+          <Link to="/feature">
             <FormattedMessage
               tagName="span"
               id="home.me.projects"

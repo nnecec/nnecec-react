@@ -10,7 +10,7 @@ import locale from '../locales';
 import Footer from './shared/footer';
 import Header from './shared/header';
 import Home from './home';
-import Case from './case/case';
+import Feature from './feature/feature';
 import Resume from './resume/resume';
 
 // 首屏加载
@@ -59,7 +59,7 @@ class Root extends React.Component<any, any> {
               <Header></Header>
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/case" component={Case} />
+                <Route path="/Feature" component={Feature} />
                 <Route path="/about" component={Resume} />
               </Switch>
 

@@ -24,7 +24,7 @@ export default function Me() {
               tagName="p"
               id="home.me.description"
             />
-            <Link to="/case">
+            <Link to="/feature">
               <FormattedMessage
                 tagName="span"
                 id="home.me.projects"

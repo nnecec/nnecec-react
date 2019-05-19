@@ -23,7 +23,7 @@ export default function (props) {
               <img src={require('assets/weibo.svg')} width="20" />
             </FooterIconStyled>
             <FooterIconStyled href="//douban.com/people/shi1125" target="_blank">
-              <img src={require('assets/douban.svg')} width="18" />
+              <img src={require('assets/douban.svg')} width="17" />
             </FooterIconStyled>
             <FooterIconStyled href="//twitter.com/nnecolly" target="_blank">
               <img src={require('assets/twitter.svg')} width="20" />

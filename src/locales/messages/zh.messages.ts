@@ -5,7 +5,7 @@ import FooterZhMessages from './footer.zh.messages';
 
 import ResumeZhMessages from './resume.zh.messages';
 
-import CaseZhMessages from './case.zh.messages';
+import FeatureZhMessages from './feature.zh.messages';
 
 export default {
   ...HomeZhMessages,
@@ -13,5 +13,5 @@ export default {
   ...HeaderZhMessages,
   ...FooterZhMessages,
   ...ResumeZhMessages,
-  ...CaseZhMessages,
+  ...FeatureZhMessages,
 };

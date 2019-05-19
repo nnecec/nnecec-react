@@ -1,8 +1,4 @@
 export default {
-  'header.nav.home': '主页',
-  'header.nav.case': '途说',
-  'header.nav.about': '关于',
-
   'home.me.intro': '你好 👋，</br></br>' +
     '我是 nnecec，一个前端开发工程师。</br>' +
     '你可以通过邮箱与我联系: <a href="mailto:nnecec@outlook.com">nnecec@outlook.com</a>',

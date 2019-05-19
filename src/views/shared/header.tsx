@@ -40,11 +40,11 @@ export default class Header extends React.Component<HeaderProps, any> {
           defaultMessage="Home"
         />
       </Link>,
-      <Link to="/case">
+      <Link to="/feature">
         <FormattedMessage
           tagName="span"
-          id="header.nav.case"
-          defaultMessage="Case"
+          id="header.nav.feature"
+          defaultMessage="feature"
         />
       </Link>,
       <Link to="/about">

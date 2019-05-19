@@ -5,7 +5,7 @@ import FooterEnMessages from './footer.en.messages';
 
 import ResumeEnMessages from './resume.en.messages';
 
-import CaseEnMessages from './case.en.messages';
+import FeatureEnMessages from './feature.en.messages';
 
 export default {
   ...HomeEnMessages,
@@ -13,5 +13,5 @@ export default {
   ...HeaderEnMessages,
   ...FooterEnMessages,
   ...ResumeEnMessages,
-  ...CaseEnMessages,
+  ...FeatureEnMessages,
 };

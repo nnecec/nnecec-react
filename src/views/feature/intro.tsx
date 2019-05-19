@@ -15,7 +15,7 @@ export default function Intro(props) {
       <TitleStyled>
         <FormattedHTMLMessage
           tagName="p"
-          id="header.nav.case"
+          id="header.nav.feature"
         />
       </TitleStyled>
     </IntroTitleStyled>

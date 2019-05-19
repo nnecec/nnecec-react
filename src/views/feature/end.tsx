@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { EndStyled } from './styles/caseStyled'
+import { EndStyled } from './styles/featureStyled'
 
 const endJPG = require('../../assets/fuse-brussels-white.jpg')
 

@@ -1,5 +1,5 @@
 export default {
   'header.nav.home': 'Home',
-  'header.nav.case': 'Case',
+  'header.nav.feature': 'Feature',
   'header.nav.about': 'About',
 };

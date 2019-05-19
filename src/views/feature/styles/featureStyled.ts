@@ -11,7 +11,7 @@ export const RepositoryStyled = styled.div`
   padding-bottom: 200px; */
 `
 
-export const CaseTitleStyled = styled.h1`
+export const FeatureTitleStyled = styled.h1`
   font-size: 20px;
   color: ${theme.colors.black};
   text-align: right;
@@ -22,7 +22,7 @@ export const CaseTitleStyled = styled.h1`
   }
 `
 
-export const CaseRepoStyled = styled.div`
+export const FeatureRepoStyled = styled.div`
   color: ${theme.colors.slate};
   line-height: 1.5;
   font-size: 14px;

@@ -13,7 +13,12 @@ const config = {
   mode: 'development',
 
   devtool: 'cheap-module-eval-source-map',
-
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  },
+  
   devServer,
 
   // entry: [
@@ -31,4 +36,4 @@ const config = {
   ],
 }
 
-module.exports = merge(baseConfig, config)
+module.exports = merge.smart(baseConfig, config)

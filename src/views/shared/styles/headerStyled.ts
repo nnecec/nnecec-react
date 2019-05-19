@@ -5,6 +5,7 @@ import { ContainerStyled } from 'styles/common'
 export const HeaderStyled = styled.header`
   width: 100%;
   height: 120px;
+  position: absolute;
 `
 
 export const HeaderBackgroundStyled = styled.div`

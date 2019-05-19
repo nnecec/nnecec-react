@@ -7,7 +7,7 @@ import End from './end'
 
 @inject('commonStore')
 @observer
-export default class Case extends React.Component {
+export default class Feature extends React.Component {
 
   constructor(props) {
     super(props);
@@ -19,7 +19,7 @@ export default class Case extends React.Component {
 
   render() {
     return (
-      <div className="case">
+      <div className="feature">
 
         <Intro height={this.props.commonStore.viewHeight} />
 

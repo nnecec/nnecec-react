@@ -1,8 +1,4 @@
 export default {
-  'header.nav.home': 'Home',
-  'header.nav.case': 'Case',
-  'header.nav.about': 'About',
-
   'home.me.intro': 'Hello 👋,</br></br>' +
     'I\'m nnecec, a front-end developer.</br>' +
     'This\'s my personal website, there is some introduction of mine and my resume.</br>' +

@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { Tag, Fade } from 'components';
 
-import { RepositoryStyled, CaseTitleStyled, CaseRepoStyled } from './styles/caseStyled'
+import { RepositoryStyled, FeatureTitleStyled, FeatureRepoStyled } from './styles/featureStyled'
 
 const dwdPNG = require('../../assets/dwd.png')
 const mlabPNG = require('../../assets/mlab.png')
@@ -18,18 +18,18 @@ export default function Repositories() {
           <Row>
             <Col sm={12} md={3}>
               <Fade>
-                <CaseTitleStyled>
+                <FeatureTitleStyled>
                   <FormattedMessage
                     tagName="span"
                     id="repository.work"
                   />
-                </CaseTitleStyled>
+                </FeatureTitleStyled>
               </Fade>
             </Col>
 
             <Col sm={12} md={8}>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <img src={dwdPNG} alt="" width="100%" />
 
                   <h2>admin.dianwoda</h2>
@@ -44,10 +44,10 @@ export default function Repositories() {
                     <Tag title={'Webpack'} />
                     <Tag title={'SCSS'} />
                   </div>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <img src={mlabPNG} alt="" width="100%" />
                   <h2>malianghang.com</h2>
                   <FormattedHTMLMessage
@@ -61,7 +61,7 @@ export default function Repositories() {
                     <Tag title={'RequireJS'} />
                     <Tag title={'SCSS'} />
                   </div>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
             </Col>
           </Row>
@@ -74,18 +74,18 @@ export default function Repositories() {
           <Row>
             <Col sm={12} md={3}>
               <Fade>
-                <CaseTitleStyled>
+                <FeatureTitleStyled>
                   <FormattedMessage
                     tagName="span"
                     id="repository.personal"
                   />
-                </CaseTitleStyled>
+                </FeatureTitleStyled>
               </Fade>
             </Col>
 
             <Col sm={12} md={8}>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <a href="https://github.com/nnecec/nnecec-react" target="_blank">
                     <h2>nnecec-react</h2>
                     <FormattedHTMLMessage
@@ -100,10 +100,10 @@ export default function Repositories() {
                       <Tag title={'PostCSS'} />
                     </div>
                   </a>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <a href="https://github.com/nnecec/ecblog-server" target="_blank">
                     <h2>ecblog</h2>
                     <h3>ecblog-server</h3>
@@ -120,10 +120,10 @@ export default function Repositories() {
                       <Tag title={'Passport'} />
                     </div>
                   </a>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <a href="https://github.com/nnecec/nnecec-blog-admin" target="_blank">
                     <h3>ecblog-admin</h3>
                     <FormattedHTMLMessage
@@ -138,10 +138,10 @@ export default function Repositories() {
                       <Tag title={'SCSS'} />
                     </div>
                   </a>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <a href="https://github.com/nnecec/arrow" target="_blank">
                     <h2>Arrow</h2>
                     <FormattedHTMLMessage
@@ -156,10 +156,10 @@ export default function Repositories() {
                       <Tag title={'Rollup'} />
                     </div>
                   </a>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <a href="https://github.com/nnecec/nnecec-luoo" target="_blank">
                     <h2>nnecec-luoo</h2>
                     <FormattedHTMLMessage
@@ -175,10 +175,10 @@ export default function Repositories() {
                       <Tag title={'Webpack'} />
                     </div>
                   </a>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <a href="https://github.com/nnecec/necook" target="_blank">
                     <h2>necook</h2>
                     <FormattedHTMLMessage
@@ -190,10 +190,10 @@ export default function Repositories() {
                       <Tag title={'JavaScript'} />
                     </div>
                   </a>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
               <Fade>
-                <CaseRepoStyled>
+                <FeatureRepoStyled>
                   <a href="https://github.com/nnecec/leetec" target="_blank">
                     <h2>leetec</h2>
                     <FormattedHTMLMessage
@@ -205,7 +205,7 @@ export default function Repositories() {
                       <Tag title={'AVA'} />
                     </div>
                   </a>
-                </CaseRepoStyled>
+                </FeatureRepoStyled>
               </Fade>
             </Col>
           </Row>

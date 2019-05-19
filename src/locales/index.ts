@@ -6,8 +6,8 @@ import messagesZh from './zh-Hans.messages';
 import messagesEn from './en-US.messages';
 
 // 引入组件多语言
-import viewsEnLocale from '../views/messages/en.messages';
-import viewsZhLocale from '../views/messages/zh.messages';
+import viewsEnLocale from './messages/en.messages';
+import viewsZhLocale from './messages/zh.messages';
 
 const locale = {
   'zh-cn': {
