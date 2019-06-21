@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import "regenerator-runtime/runtime"
+import 'regenerator-runtime/runtime'
 
 // mobx
 import { createBrowserHistory } from 'history'
@@ -14,12 +14,12 @@ const browserHistory = createBrowserHistory()
 const routingStore = new RouterStore()
 const stores = {
   routing: routingStore,
-  ...store,
+  ...store
 }
 
-const history = syncHistoryWithStore(browserHistory, routingStore);
+const history = syncHistoryWithStore(browserHistory, routingStore)
 
-export default function App() {
+export default function App () {
   return (
     <Provider {...stores}>
       <Router>
@@ -28,4 +28,3 @@ export default function App() {
     </Provider>
   )
 }
-
