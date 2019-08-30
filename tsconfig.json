@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "module": "esNext",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "strictNullChecks": true,
     "declaration": false,
     "jsx": "preserve",
@@ -9,6 +11,7 @@
       "dom",
       "es7"
     ],
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,

@@ -1,7 +1,8 @@
-import Tag from './tag';
-import Fade from './fade';
+import Tag, { TagTitleEnum } from './tag'
+import Fade from './fade'
 
 export {
   Tag,
-  Fade,
-};
+  TagTitleEnum,
+  Fade
+}

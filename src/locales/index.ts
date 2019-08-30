@@ -1,21 +1,18 @@
-import localeDataEn from 'react-intl/locale-data/en';
-import localeDataZh from 'react-intl/locale-data/zh';
-
 // common messages
-import messagesZh from './zh-Hans.messages';
-import messagesEn from './en-US.messages';
+import messagesZh from './zh-Hans.messages'
+import messagesEn from './en-US.messages'
 
 // 引入组件多语言
-import viewsEnLocale from './messages/en.messages';
-import viewsZhLocale from './messages/zh.messages';
+import viewsEnLocale from './messages/en.messages'
+import viewsZhLocale from './messages/zh.messages'
 
 const locale = {
   'zh-cn': {
     messages: Object.assign({}, messagesZh, {
-      ...viewsZhLocale,
+      ...viewsZhLocale
     }),
     locale: 'zh-Hans',
-    data: localeDataZh,
+    data: new Intl.PluralRules('zh-Hans-CN'),
     formats: {
       date: {
         normal: {
@@ -24,20 +21,20 @@ const locale = {
           month: '2-digit',
           day: '2-digit',
           hour: '2-digit',
-          minute: '2-digit',
-        },
+          minute: '2-digit'
+        }
       },
       money: {
-        currency: 'CNY',
-      },
-    },
+        currency: 'CNY'
+      }
+    }
   },
   'en-us': {
     messages: Object.assign({}, messagesEn, {
-      ...viewsEnLocale,
+      ...viewsEnLocale
     }),
     locale: 'en-US',
-    data: localeDataEn,
+    data: new Intl.PluralRules(),
     formats: {
       date: {
         normal: {
@@ -46,15 +43,14 @@ const locale = {
           month: '2-digit',
           day: '2-digit',
           hour: '2-digit',
-          minute: '2-digit',
-        },
+          minute: '2-digit'
+        }
       },
       money: {
-        currency: 'USD',
-      },
-    },
-  },
+        currency: 'USD'
+      }
+    }
+  }
+}
 
-};
-
-export default locale;
+export default locale

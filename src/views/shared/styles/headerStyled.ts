@@ -34,6 +34,7 @@ export const HeaderNavStyled = styled.nav`
     display: flex;
     list-style: none;
     color: #333;
+    font-size: 12px;
 
     li {
       line-height: 1.5;
@@ -41,7 +42,7 @@ export const HeaderNavStyled = styled.nav`
 
       button {
         background-color: transparent;
-        line-height: 1.4;
+        line-height: 1.2;
       }
     }
   }

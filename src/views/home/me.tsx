@@ -1,13 +1,12 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
-
+import * as React from 'react'
+import { Link } from 'react-router-dom'
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
+import { ContainerStyled } from 'styles/common'
 import { Fade } from 'components'
 
-
-export default function Me() {
+export default function Me (): React.ReactElement {
   return (
-    <div className="container">
+    <ContainerStyled>
       <div className="intro">
         <Fade>
           <FormattedHTMLMessage
@@ -33,6 +32,6 @@ export default function Me() {
           </React.Fragment>
         </Fade>
       </div>
-    </div>
+    </ContainerStyled>
   )
 }

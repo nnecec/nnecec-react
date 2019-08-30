@@ -1,14 +1,14 @@
-import * as React from 'react';
+import * as React from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { FooterStyled, FooterVersionStyled, FooterSloganStyled, FooterIconStyled } from './styles/footerStyled'
+import { FooterStyled, FooterVersionStyled, FooterSloganStyled, FooterIconStyled, FooterContainerStyled } from './styles/footerStyled'
 
-const pkg = require('../../../package.json')
+import pkg from '../../../package.json'
 
-export default function (props) {
+export default function Footer (): React.ReactElement {
   return (
     <FooterStyled>
-      <div className="container footer">
+      <FooterContainerStyled>
         <FooterVersionStyled>
           {pkg.version}
         </FooterVersionStyled>
@@ -34,11 +34,10 @@ export default function (props) {
           </div>
 
           <FormattedMessage
-            tagName="span"
             id="footer.designed"
           />
         </FooterSloganStyled>
-      </div>
+      </FooterContainerStyled>
     </FooterStyled >
   )
 }

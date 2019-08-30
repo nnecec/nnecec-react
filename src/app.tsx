@@ -1,30 +1,15 @@
-import * as React from 'react'
+import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import 'regenerator-runtime/runtime'
-
-// mobx
-import { createBrowserHistory } from 'history'
-import { Provider } from 'mobx-react'
-import { RouterStore, syncHistoryWithStore } from 'mobx-react-router'
-import store from './store'
 
 import Root from './views/root'
+import { StoreProvider } from './store'
 
-const browserHistory = createBrowserHistory()
-const routingStore = new RouterStore()
-const stores = {
-  routing: routingStore,
-  ...store
-}
-
-const history = syncHistoryWithStore(browserHistory, routingStore)
-
-export default function App () {
+export default function App (): React.ReactElement {
   return (
-    <Provider {...stores}>
-      <Router>
+    <StoreProvider>
+      <Router basename="/">
         <Root></Root>
       </Router>
-    </Provider>
+    </StoreProvider>
   )
 }

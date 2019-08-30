@@ -6,7 +6,8 @@ const { resolve } = require('path')
 const devServer = {
   port: 3004,
   hotOnly: true,
-  contentBase: resolve(__dirname, '../dist')
+  contentBase: resolve(__dirname, '../dist'),
+  historyApiFallback: true
 }
 
 const config = {

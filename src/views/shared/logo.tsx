@@ -4,20 +4,19 @@ import { useSpring, animated } from 'react-spring'
 import { color } from 'styles/common'
 
 interface LogoProps {
-  width: number, // logo width
-  height?: number,
-  dontHover?: boolean, // disable hover
+  width: number; // logo width
+  height?: number;
+  dontHover?: boolean; // disable hover
 }
 
 const { useState } = React
 
-export default function Logo(props: LogoProps) {
-
+export default function Logo (props: LogoProps): React.ReactElement {
   const { width = 100, height = 100 } = props
 
   const [hover, setHover] = useState(false)
 
-  function handlePointerMove(bool: boolean) {
+  function handlePointerMove (bool: boolean): void {
     const { dontHover } = props
     if (dontHover) return
 
@@ -28,8 +27,8 @@ export default function Logo(props: LogoProps) {
 
   return (
     <div
-      onPointerEnter={() => handlePointerMove(true)}
-      onPointerLeave={() => handlePointerMove(false)}
+      onPointerEnter={(): void => handlePointerMove(true)}
+      onPointerLeave={(): void => handlePointerMove(false)}
     >
       <animated.svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 600 600" width={width} height={width} fill={svgProps.fill}>
         <g>

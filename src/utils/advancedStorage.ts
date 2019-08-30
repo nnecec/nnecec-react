@@ -1,17 +1,17 @@
 class AdvancedStorage {
   key: string;
 
-  constructor(key: string) {
-    this.key = key;
+  constructor (key: string) {
+    this.key = key
   }
 
-  public setLocal(value: any) {
-    localStorage.setItem(this.key, value);
+  public setLocal (value: any): void {
+    localStorage.setItem(this.key, value)
   }
 
-  public getLocal() {
-    return localStorage.getItem(this.key);
+  public getLocal (): string|null {
+    return localStorage.getItem(this.key)
   }
 }
 
-export default AdvancedStorage;
+export default AdvancedStorage

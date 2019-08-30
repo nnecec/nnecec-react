@@ -7,15 +7,13 @@ import { Fade } from 'components'
 import { ExperienceItemStyled } from './styles/experienceStyled'
 import { SectionStyled, SectionTitleStyled } from './styles/resumeStyled'
 
-export default function Basic() {
-
+export default function Basic (): React.ReactElement {
   return (
     <SectionStyled>
       <div className="container">
         <Fade>
           <SectionTitleStyled>
             <FormattedMessage
-              tagName="span"
               id="resume.work"
             />
 
@@ -25,7 +23,6 @@ export default function Basic() {
           <ExperienceItemStyled>
             <h2>馬良行</h2>
             <FormattedMessage
-              tagName="span"
               id="resume.work.malianghang"
             />
           </ExperienceItemStyled>
@@ -34,7 +31,6 @@ export default function Basic() {
           <ExperienceItemStyled>
             <h2>点我达</h2>
             <FormattedMessage
-              tagName="span"
               id="resume.work.dianwoda"
             />
           </ExperienceItemStyled>
@@ -43,7 +39,6 @@ export default function Basic() {
         <Fade>
           <Link to="/feature">
             <FormattedMessage
-              tagName="span"
               id="home.me.projects"
             />
           </Link>

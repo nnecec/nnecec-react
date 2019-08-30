@@ -1,17 +1,16 @@
 import styled from 'styled-components'
-import { color } from 'styles/common'
+import { color, ContainerStyled } from 'styles/common'
 
 export const FooterStyled = styled.footer`
   bottom: 0;
   width: 100%;
-
-  .footer{
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #eee;
-    font-size: 12px;
-    padding: 30px 0;
-  }
+`
+export const FooterContainerStyled = styled(ContainerStyled)`
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  padding: 30px 0;
 `
 
 export const FooterVersionStyled = styled.div`

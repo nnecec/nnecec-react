@@ -21,6 +21,7 @@ const config = {
       "components": resolve(__dirname, '../src/components'),
       "styles": resolve(__dirname, '../src/styles'),
       "assets": resolve(__dirname, '../src/assets'),
+      "store": resolve(__dirname, '../src/store'),
     },
   },
 

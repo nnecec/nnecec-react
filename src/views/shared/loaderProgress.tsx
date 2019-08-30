@@ -10,18 +10,18 @@ export default class Loader extends React.Component<any, any> {
   state = {
     state: 'peek'
   }
-  constructor(props: any) {
+
+  constructor (props: any) {
     super(props)
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.setState({ state: 'show' })
   }
 
-  render() {
+  render () {
     const { width = 100, height = 100 } = this.props
     const { state } = this.state
-
 
     const Background = Keyframes.Trail({
       peek: [{ y: 0 }],
@@ -29,7 +29,7 @@ export default class Loader extends React.Component<any, any> {
       hide: async (next: Function) => {
         await next({ y: 100, from: { y: 0 } })
         this.props.commonStore.setLoader()
-      },
+      }
     })
 
     const Word = Keyframes.Trail({
@@ -53,13 +53,12 @@ export default class Loader extends React.Component<any, any> {
             {
               (_) => (styles) => (
                 <BackgroundStyled style={{
-                  transform: `translate(0, ${styles.y}%)`,
+                  transform: `translate(0, ${styles.y}%)`
                 }} />
               )
             }
           </Background>
         </BackgroundWrapStyled>
-
 
         <ItemWrapStyled>
           <Word state={state} keys={items.map((_, i) => i)} items={items}>

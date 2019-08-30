@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 import { FormattedMessage } from 'react-intl'
 
 import { Fade } from 'components'
@@ -6,20 +6,18 @@ import { Fade } from 'components'
 import { SkillStyled } from './styles/skillStyled'
 import { SectionStyled, SectionTitleStyled } from './styles/resumeStyled'
 
-export default function Skill() {
-
+export default function Skill (): React.ReactElement {
   return (
     <SectionStyled>
       <div className="container">
         <SectionTitleStyled>
           <FormattedMessage
-            tagName="span"
             id="resume.skill"
           />
         </SectionTitleStyled>
         <SkillStyled>
           <Fade>
-            <li>JavaScript (ES6)</li>
+            <li>JavaScript</li>
             <li>TypeScript</li>
             <li>HTML/Jade</li>
             <li>CSS/Sass</li>

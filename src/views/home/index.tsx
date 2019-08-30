@@ -1,26 +1,18 @@
-import * as React from 'react';
-import { inject, observer } from 'mobx-react';
+import * as React from 'react'
+import { useStore } from 'store'
 
 import { IntroStyled, MeStyled } from './styles/homeStyled'
-import Me from './me';
+import Me from './me'
 
-export interface HomeProps {
-  commonStore: any
-}
-@inject('commonStore')
-@observer
-export default class Home extends React.Component<HomeProps, any> {
+export default function Home (): React.ReactElement {
+  const store = useStore()
 
-  render() {
-    const { commonStore } = this.props;
-
-    return (
-      <div className="home">
-        <IntroStyled style={{ height: commonStore.viewHeight }} />
-        <MeStyled>
-          <Me></Me>
-        </MeStyled>
-      </div >
-    );
-  }
+  return (
+    <div className="home">
+      <IntroStyled style={{ height: store.common.viewHeight }} />
+      <MeStyled>
+        <Me></Me>
+      </MeStyled>
+    </div >
+  )
 }
