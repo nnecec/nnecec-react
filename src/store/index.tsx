@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react'
 import { createStore, TStore } from './createStore'
-import { useLocalStore } from 'mobx-react' // 6.x or mobx-react-lite@1.4.0
+import { useLocalStore } from 'mobx-react-lite'
 
 const storeContext=createContext<TStore | null>(null)
 
