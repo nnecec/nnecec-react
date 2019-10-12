@@ -4,6 +4,6 @@ nnecec's personal website.
 
 ## Feature
 
-- React, React Router 4, React Intl
+- React, React Router 5, React Intl
 - Mobx, Styled-components, react-spring
-- Typescript, Parcel
+- Typescript, Webpack

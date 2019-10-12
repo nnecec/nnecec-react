@@ -19,7 +19,7 @@ const config = {
       'react-dom': '@hot-loader/react-dom'
     }
   },
-  
+
   devServer,
 
   // entry: [
@@ -29,12 +29,12 @@ const config = {
   // ],
 
   output: {
-    publicPath: '/',
+    publicPath: '/'
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
 
 module.exports = merge.smart(baseConfig, config)
