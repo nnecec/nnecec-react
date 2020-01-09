@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const StyledTag = styled.div`
@@ -39,7 +39,8 @@ const StyledSpan = styled.span`
   display: inline-block;
   height: 10px;
   width: 10px;
-  background-color: ${(props): string => spanColor[props.title]};
+  background-color: ${(props: { title: string }): string =>
+    spanColor[props.title]};
   border-radius: 50%;
   margin-right: 4px;
 `
@@ -53,34 +54,34 @@ export default function Tag (props: TagProps): React.ReactElement {
     <StyledTag>
       <StyledSpan title={props.title}></StyledSpan>
       {props.title}
-    </StyledTag >
+    </StyledTag>
   )
 }
 
 export enum TagTitleEnum {
-  JavaScript='JavaScript',
-  TypeScript='TypeScript',
-  React='React',
-  MobX='MobX',
-  Parcel='Parcel',
-  PostCSS='PostCSS',
-  GraphQL='GraphQL',
-  Koa='Koa',
-  mongoose='mongoose',
-  Passport='Passport',
-  Angular='Angular',
-  Apollo='Apollo',
-  RxJS='RxJS',
-  Webpack='Webpack',
-  Redux='Redux',
-  Grunt='Grunt',
-  RequireJS='RequireJS',
-  SCSS='SCSS',
-  Nodejs='Nodejs',
-  AVA='AVA',
-  markdown='markdown',
-  Electron='Electron',
-  Less='Less',
-  Jest='Jest',
-  Rollup='Rollup',
-};
+  JavaScript = 'JavaScript',
+  TypeScript = 'TypeScript',
+  React = 'React',
+  MobX = 'MobX',
+  Parcel = 'Parcel',
+  PostCSS = 'PostCSS',
+  GraphQL = 'GraphQL',
+  Koa = 'Koa',
+  mongoose = 'mongoose',
+  Passport = 'Passport',
+  Angular = 'Angular',
+  Apollo = 'Apollo',
+  RxJS = 'RxJS',
+  Webpack = 'Webpack',
+  Redux = 'Redux',
+  Grunt = 'Grunt',
+  RequireJS = 'RequireJS',
+  SCSS = 'SCSS',
+  Nodejs = 'Nodejs',
+  AVA = 'AVA',
+  markdown = 'markdown',
+  Electron = 'Electron',
+  Less = 'Less',
+  Jest = 'Jest',
+  Rollup = 'Rollup'
+}

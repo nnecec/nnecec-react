@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import Root from './views/root'
+import Root from './screens/root'
 import { StoreProvider } from './store'
 
-export default function App (): React.ReactElement {
+const App: React.FC = () => {
   return (
     <StoreProvider>
       <Router basename="/">
@@ -13,3 +13,5 @@ export default function App (): React.ReactElement {
     </StoreProvider>
   )
 }
+
+export default App

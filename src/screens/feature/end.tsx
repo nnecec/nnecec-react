@@ -1,11 +1,12 @@
-import * as React from 'react'
+import React from 'react'
 
 import { EndStyled } from './styles/featureStyled'
 
 const endJPG = require('../../assets/fuse-brussels-white.jpg')
 
-export default function End() {
+const End: React.FC = () => {
   return (<EndStyled>
     <img src={endJPG} alt="" width="60%" />
   </EndStyled >)
 }
+export default End

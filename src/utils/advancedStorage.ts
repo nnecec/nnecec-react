@@ -5,11 +5,11 @@ class AdvancedStorage {
     this.key = key
   }
 
-  public setLocal (value: any): void {
+  public setLocal (value: string): void {
     localStorage.setItem(this.key, value)
   }
 
-  public getLocal (): string|null {
+  public getLocal (): string | null {
     return localStorage.getItem(this.key)
   }
 }

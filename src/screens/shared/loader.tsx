@@ -4,7 +4,13 @@ import { Keyframes } from 'react-spring/renderprops'
 import delay from 'delay'
 import { useStore } from 'store'
 
-import { LoaderStyled, ItemWrapStyled, ItemStyled, BackgroundWrapStyled, BackgroundStyled } from './styles/LoaderStyled'
+import {
+  LoaderStyled,
+  ItemWrapStyled,
+  ItemStyled,
+  BackgroundWrapStyled,
+  BackgroundStyled
+} from './styles/LoaderStyled'
 
 export default (): React.ReactElement => {
   const store = useStore()
@@ -42,22 +48,26 @@ export default (): React.ReactElement => {
     <LoaderStyled>
       <BackgroundWrapStyled>
         <Background state={state} keys={bgs} items={bgs}>
-          {
-            (_) => (styles) => (
-              <BackgroundStyled style={{
+          {() => styles => (
+            <BackgroundStyled
+              style={{
                 transform: `translate(0, ${styles.y}%)`
-              }} />
-            )
-          }
+              }}
+            />
+          )}
         </Background>
       </BackgroundWrapStyled>
 
       <ItemWrapStyled>
         <Word state={state} keys={items.map((_, i) => i)} items={items}>
-          {(item) => styles => (
-            <ItemStyled style={{
-              transform: `translateY(${styles.y}px)`
-            }}>{item}</ItemStyled>
+          {item => styles => (
+            <ItemStyled
+              style={{
+                transform: `translateY(${styles.y}px)`
+              }}
+            >
+              {item}
+            </ItemStyled>
           )}
         </Word>
       </ItemWrapStyled>

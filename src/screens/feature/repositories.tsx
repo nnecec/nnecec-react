@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
 
 import { Tag, TagTitleEnum, Fade } from 'components'
@@ -8,7 +8,7 @@ import { RepositoryStyled, FeatureTitleStyled, FeatureRepoStyled } from './style
 const dwdPNG = require('../../assets/dwd.png')
 const mlabPNG = require('../../assets/mlab.png')
 
-export default function Repositories (): React.ReactElement {
+const Repositories: React.FC = () => {
   return (
     <RepositoryStyled>
       <div className="container work">
@@ -199,3 +199,4 @@ export default function Repositories (): React.ReactElement {
     </RepositoryStyled>
   )
 }
+export default Repositories

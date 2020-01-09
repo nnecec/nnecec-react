@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Route, Switch, withRouter } from 'react-router-dom'
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
 import { observer } from 'mobx-react-lite'
 
@@ -20,7 +20,7 @@ import Loader from './shared/loader'
 import '../styles/app.css'
 import { AppStyled } from '../styles/app'
 
-const Root: React.FC = observer((props) => {
+const Root: React.FC = observer(props => {
   const store = useStore()
 
   store.common.setViewHeight(window.innerHeight)
@@ -36,16 +36,14 @@ const Root: React.FC = observer((props) => {
 
   return (
     <AppStyled>
-      <IntlProvider locale={appLocale.locale}
+      <IntlProvider
+        locale={appLocale.locale}
         messages={appLocale.messages}
         formats={appLocale.formats}
         defaultLocale={navigator.language}
       >
-
         <div className="viewport font-hei">
-          {
-            !isLoader && <Loader />
-          }
+          {!isLoader && <Loader />}
           <React.Fragment>
             <Header />
             <Switch>
@@ -55,7 +53,8 @@ const Root: React.FC = observer((props) => {
             </Switch>
 
             <Footer></Footer>
-          </React.Fragment> :
+          </React.Fragment>{' '}
+          :
         </div>
       </IntlProvider>
     </AppStyled>

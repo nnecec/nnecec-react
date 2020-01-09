@@ -2,7 +2,9 @@ import AdvancedStorage from '../utils/advancedStorage'
 
 const storage = new AdvancedStorage('lang')
 
-export default function (): Record<string, any> {
+type Tcommon = number | boolean | Function | string;
+
+const common = (): Record<string, Tcommon> => {
   return {
     viewHeight: 0,
     locale: storage.getLocal() || navigator.language || 'en-US',
@@ -18,3 +20,5 @@ export default function (): Record<string, any> {
     }
   }
 }
+
+export default common

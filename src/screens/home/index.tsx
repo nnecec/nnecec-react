@@ -1,10 +1,10 @@
-import * as React from 'react'
+import React from 'react'
 import { useStore } from 'store'
 
 import { IntroStyled, MeStyled } from './styles/homeStyled'
 import Me from './me'
 
-export default function Home (): React.ReactElement {
+const Home: React.FC = () => {
   const store = useStore()
 
   return (
@@ -16,3 +16,4 @@ export default function Home (): React.ReactElement {
     </div >
   )
 }
+export default Home

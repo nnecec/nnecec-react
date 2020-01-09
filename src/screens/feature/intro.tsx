@@ -1,12 +1,13 @@
-import * as React from 'react';
-import { FormattedHTMLMessage } from 'react-intl';
-
-
+import React from 'react'
+import { FormattedHTMLMessage } from 'react-intl'
 
 import { IntroStyled, IntroImageStyled, IntroTitleStyled, TitleStyled } from './styles/introStyled'
 
-export default function Intro(props) {
+type IntroProps = {
+  height: number;
+}
 
+const Intro: React.FC = (props: IntroProps) => {
   const { height } = props
 
   return (<IntroStyled style={{ height: `${height * 0.8}px` }}>
@@ -21,5 +22,6 @@ export default function Intro(props) {
     </IntroTitleStyled>
   </IntroStyled >
   )
-
 }
+
+export default Intro

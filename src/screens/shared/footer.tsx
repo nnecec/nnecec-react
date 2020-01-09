@@ -1,20 +1,23 @@
-import * as React from 'react'
+import React from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { FooterStyled, FooterVersionStyled, FooterSloganStyled, FooterIconStyled, FooterContainerStyled } from './styles/footerStyled'
+import {
+  FooterStyled,
+  FooterVersionStyled,
+  FooterSloganStyled,
+  FooterIconStyled,
+  FooterContainerStyled
+} from './styles/footerStyled'
 
 import pkg from '../../../package.json'
 
-export default function Footer (): React.ReactElement {
+const Footer: React.FC = () => {
   return (
     <FooterStyled>
       <FooterContainerStyled>
-        <FooterVersionStyled>
-          {pkg.version}
-        </FooterVersionStyled>
+        <FooterVersionStyled>{pkg.version}</FooterVersionStyled>
 
         <FooterSloganStyled>
-
           <div style={{ marginBottom: 12 }}>
             <FooterIconStyled href="//github.com/nnecec" target="_blank">
               <img src={require('assets/github.svg')} width="20" />
@@ -22,7 +25,10 @@ export default function Footer (): React.ReactElement {
             <FooterIconStyled href="//weibo.com/4srel" target="_blank">
               <img src={require('assets/weibo.svg')} width="20" />
             </FooterIconStyled>
-            <FooterIconStyled href="//douban.com/people/shi1125" target="_blank">
+            <FooterIconStyled
+              href="//douban.com/people/shi1125"
+              target="_blank"
+            >
               <img src={require('assets/douban.svg')} width="17" />
             </FooterIconStyled>
             <FooterIconStyled href="//twitter.com/nnecolly" target="_blank">
@@ -33,11 +39,11 @@ export default function Footer (): React.ReactElement {
             </FooterIconStyled>
           </div>
 
-          <FormattedMessage
-            id="footer.designed"
-          />
+          <FormattedMessage id="footer.designed" />
         </FooterSloganStyled>
       </FooterContainerStyled>
-    </FooterStyled >
+    </FooterStyled>
   )
 }
+
+export default Footer

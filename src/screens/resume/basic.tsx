@@ -1,13 +1,12 @@
-import * as React from 'react';
-import { FormattedMessage } from 'react-intl';
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import { SectionStyled, SectionTitleStyled } from './styles/resumeStyled'
 
-interface BasicProps {
-  height: number
-}
+type BasicProps = {
+  height: number;
+};
 
-export default function Basic(props: BasicProps) {
-
+const Basic: React.FC<BasicProps> = (props: BasicProps) => {
   const { height } = props
 
   return (
@@ -16,28 +15,28 @@ export default function Basic(props: BasicProps) {
         <div className="avatar"></div>
 
         <SectionTitleStyled>
-          <FormattedMessage
-            tagName="span"
-            id="resume.name"
-          />
+          <FormattedMessage tagName="span" id="resume.name" />
         </SectionTitleStyled>
 
         <div className="contact">
           <div className="item">
-            <FormattedMessage
-              tagName="span"
-              id="resume.email"
-            />
+            <FormattedMessage tagName="span" id="resume.email" />
             <span>: nnecec@outlook.com</span>
           </div>
 
           <div className="item">
             <span>Github: </span>
-            <a href="//github.com/nnecec" target="_blank">github.com/nnecec</a>
+            <a
+              href="//github.com/nnecec"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/nnecec
+            </a>
           </div>
         </div>
       </div>
     </SectionStyled>
   )
-
 }
+export default Basic
